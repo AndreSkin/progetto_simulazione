@@ -1,8 +1,8 @@
 version 3
-run General-7-20221027-09:47:20-10452
+run General-7-20221027-10:37:26-16912
 attr configname General
-attr datetime 20221027-09:47:20
-attr datetimef 20221027-094720
+attr datetime 20221027-10:37:26
+attr datetimef 20221027-103726
 attr experiment General
 attr inifile simu_1.ini
 attr iterationvars ""
@@ -10,7 +10,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Rete
-attr processid 10452
+attr processid 16912
 attr repetition 7
 attr replication #7
 attr resultdir results

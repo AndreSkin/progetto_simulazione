@@ -1,5 +1,5 @@
 #
-# OMNeT++/OMNEST Makefile for Simu_1
+# OMNeT++/OMNEST Makefile for Simulazione_tutorial_1
 #
 # This file was generated with the command:
 #  opp_makemake -f --deep -O out -KQUEUEINGLIB_PROJ=C:/Users/schin/Downloads/omnetpp-6.0.1-windows-x86_64/omnetpp-6.0.1/samples/queueinglib -DQUEUEING_IMPORT -I. -I$$\(QUEUEINGLIB_PROJ\) -L$$\(QUEUEINGLIB_PROJ\) -lqueueinglib$$\(D\)
@@ -7,7 +7,7 @@
 
 # Name of target to be created (-o option)
 TARGET_DIR = .
-TARGET_NAME = Simu_1$(D)
+TARGET_NAME = Simulazione_tutorial_1$(D)
 TARGET = $(TARGET_NAME)$(EXE_SUFFIX)
 TARGET_IMPLIB = $(TARGET_NAME)$(IMPLIB_SUFFIX)
 TARGET_IMPDEF = $(TARGET_NAME)$(IMPDEF_SUFFIX)
