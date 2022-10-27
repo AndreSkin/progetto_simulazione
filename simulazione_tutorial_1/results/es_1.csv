@@ -1,0 +1,1361 @@
+run,type,module,name,attrname,attrvalue,value
+General-1-20221027-10:37:26-16912,runattr,,,configname,General,
+General-1-20221027-10:37:26-16912,runattr,,,datetime,20221027-10:37:26,
+General-1-20221027-10:37:26-16912,runattr,,,datetimef,20221027-103726,
+General-1-20221027-10:37:26-16912,runattr,,,experiment,General,
+General-1-20221027-10:37:26-16912,runattr,,,inifile,simu_1.ini,
+General-1-20221027-10:37:26-16912,runattr,,,iterationvars,,
+General-1-20221027-10:37:26-16912,runattr,,,iterationvarsd,,
+General-1-20221027-10:37:26-16912,runattr,,,iterationvarsf,,
+General-1-20221027-10:37:26-16912,runattr,,,measurement,,
+General-1-20221027-10:37:26-16912,runattr,,,network,Rete,
+General-1-20221027-10:37:26-16912,runattr,,,processid,16912,
+General-1-20221027-10:37:26-16912,runattr,,,repetition,1,
+General-1-20221027-10:37:26-16912,runattr,,,replication,#1,
+General-1-20221027-10:37:26-16912,runattr,,,resultdir,results,
+General-1-20221027-10:37:26-16912,runattr,,,runnumber,1,
+General-1-20221027-10:37:26-16912,runattr,,,seedset,1,
+General-1-20221027-10:37:26-16912,config,,,network,Rete,
+General-1-20221027-10:37:26-16912,config,,,record-eventlog,false,
+General-1-20221027-10:37:26-16912,config,,,repeat,10,
+General-1-20221027-10:37:26-16912,config,,,sim-time-limit,1000s,
+General-1-20221027-10:37:26-16912,config,,,simtime-resolution,ps,
+General-1-20221027-10:37:26-16912,config,,,**.Servente.serviceTime,exponential(1s),
+General-1-20221027-10:37:26-16912,config,,,**.Arrivi.interArrivalTime,exponential(2s),
+General-3-20221027-10:37:26-16912,runattr,,,configname,General,
+General-3-20221027-10:37:26-16912,runattr,,,datetime,20221027-10:37:26,
+General-3-20221027-10:37:26-16912,runattr,,,datetimef,20221027-103726,
+General-3-20221027-10:37:26-16912,runattr,,,experiment,General,
+General-3-20221027-10:37:26-16912,runattr,,,inifile,simu_1.ini,
+General-3-20221027-10:37:26-16912,runattr,,,iterationvars,,
+General-3-20221027-10:37:26-16912,runattr,,,iterationvarsd,,
+General-3-20221027-10:37:26-16912,runattr,,,iterationvarsf,,
+General-3-20221027-10:37:26-16912,runattr,,,measurement,,
+General-3-20221027-10:37:26-16912,runattr,,,network,Rete,
+General-3-20221027-10:37:26-16912,runattr,,,processid,16912,
+General-3-20221027-10:37:26-16912,runattr,,,repetition,3,
+General-3-20221027-10:37:26-16912,runattr,,,replication,#3,
+General-3-20221027-10:37:26-16912,runattr,,,resultdir,results,
+General-3-20221027-10:37:26-16912,runattr,,,runnumber,3,
+General-3-20221027-10:37:26-16912,runattr,,,seedset,3,
+General-3-20221027-10:37:26-16912,config,,,network,Rete,
+General-3-20221027-10:37:26-16912,config,,,record-eventlog,false,
+General-3-20221027-10:37:26-16912,config,,,repeat,10,
+General-3-20221027-10:37:26-16912,config,,,sim-time-limit,1000s,
+General-3-20221027-10:37:26-16912,config,,,simtime-resolution,ps,
+General-3-20221027-10:37:26-16912,config,,,**.Servente.serviceTime,exponential(1s),
+General-3-20221027-10:37:26-16912,config,,,**.Arrivi.interArrivalTime,exponential(2s),
+General-6-20221027-10:37:26-16912,runattr,,,configname,General,
+General-6-20221027-10:37:26-16912,runattr,,,datetime,20221027-10:37:26,
+General-6-20221027-10:37:26-16912,runattr,,,datetimef,20221027-103726,
+General-6-20221027-10:37:26-16912,runattr,,,experiment,General,
+General-6-20221027-10:37:26-16912,runattr,,,inifile,simu_1.ini,
+General-6-20221027-10:37:26-16912,runattr,,,iterationvars,,
+General-6-20221027-10:37:26-16912,runattr,,,iterationvarsd,,
+General-6-20221027-10:37:26-16912,runattr,,,iterationvarsf,,
+General-6-20221027-10:37:26-16912,runattr,,,measurement,,
+General-6-20221027-10:37:26-16912,runattr,,,network,Rete,
+General-6-20221027-10:37:26-16912,runattr,,,processid,16912,
+General-6-20221027-10:37:26-16912,runattr,,,repetition,6,
+General-6-20221027-10:37:26-16912,runattr,,,replication,#6,
+General-6-20221027-10:37:26-16912,runattr,,,resultdir,results,
+General-6-20221027-10:37:26-16912,runattr,,,runnumber,6,
+General-6-20221027-10:37:26-16912,runattr,,,seedset,6,
+General-6-20221027-10:37:26-16912,config,,,network,Rete,
+General-6-20221027-10:37:26-16912,config,,,record-eventlog,false,
+General-6-20221027-10:37:26-16912,config,,,repeat,10,
+General-6-20221027-10:37:26-16912,config,,,sim-time-limit,1000s,
+General-6-20221027-10:37:26-16912,config,,,simtime-resolution,ps,
+General-6-20221027-10:37:26-16912,config,,,**.Servente.serviceTime,exponential(1s),
+General-6-20221027-10:37:26-16912,config,,,**.Arrivi.interArrivalTime,exponential(2s),
+General-5-20221027-10:37:26-16912,runattr,,,configname,General,
+General-5-20221027-10:37:26-16912,runattr,,,datetime,20221027-10:37:26,
+General-5-20221027-10:37:26-16912,runattr,,,datetimef,20221027-103726,
+General-5-20221027-10:37:26-16912,runattr,,,experiment,General,
+General-5-20221027-10:37:26-16912,runattr,,,inifile,simu_1.ini,
+General-5-20221027-10:37:26-16912,runattr,,,iterationvars,,
+General-5-20221027-10:37:26-16912,runattr,,,iterationvarsd,,
+General-5-20221027-10:37:26-16912,runattr,,,iterationvarsf,,
+General-5-20221027-10:37:26-16912,runattr,,,measurement,,
+General-5-20221027-10:37:26-16912,runattr,,,network,Rete,
+General-5-20221027-10:37:26-16912,runattr,,,processid,16912,
+General-5-20221027-10:37:26-16912,runattr,,,repetition,5,
+General-5-20221027-10:37:26-16912,runattr,,,replication,#5,
+General-5-20221027-10:37:26-16912,runattr,,,resultdir,results,
+General-5-20221027-10:37:26-16912,runattr,,,runnumber,5,
+General-5-20221027-10:37:26-16912,runattr,,,seedset,5,
+General-5-20221027-10:37:26-16912,config,,,network,Rete,
+General-5-20221027-10:37:26-16912,config,,,record-eventlog,false,
+General-5-20221027-10:37:26-16912,config,,,repeat,10,
+General-5-20221027-10:37:26-16912,config,,,sim-time-limit,1000s,
+General-5-20221027-10:37:26-16912,config,,,simtime-resolution,ps,
+General-5-20221027-10:37:26-16912,config,,,**.Servente.serviceTime,exponential(1s),
+General-5-20221027-10:37:26-16912,config,,,**.Arrivi.interArrivalTime,exponential(2s),
+General-8-20221027-10:37:26-16912,runattr,,,configname,General,
+General-8-20221027-10:37:26-16912,runattr,,,datetime,20221027-10:37:26,
+General-8-20221027-10:37:26-16912,runattr,,,datetimef,20221027-103726,
+General-8-20221027-10:37:26-16912,runattr,,,experiment,General,
+General-8-20221027-10:37:26-16912,runattr,,,inifile,simu_1.ini,
+General-8-20221027-10:37:26-16912,runattr,,,iterationvars,,
+General-8-20221027-10:37:26-16912,runattr,,,iterationvarsd,,
+General-8-20221027-10:37:26-16912,runattr,,,iterationvarsf,,
+General-8-20221027-10:37:26-16912,runattr,,,measurement,,
+General-8-20221027-10:37:26-16912,runattr,,,network,Rete,
+General-8-20221027-10:37:26-16912,runattr,,,processid,16912,
+General-8-20221027-10:37:26-16912,runattr,,,repetition,8,
+General-8-20221027-10:37:26-16912,runattr,,,replication,#8,
+General-8-20221027-10:37:26-16912,runattr,,,resultdir,results,
+General-8-20221027-10:37:26-16912,runattr,,,runnumber,8,
+General-8-20221027-10:37:26-16912,runattr,,,seedset,8,
+General-8-20221027-10:37:26-16912,config,,,network,Rete,
+General-8-20221027-10:37:26-16912,config,,,record-eventlog,false,
+General-8-20221027-10:37:26-16912,config,,,repeat,10,
+General-8-20221027-10:37:26-16912,config,,,sim-time-limit,1000s,
+General-8-20221027-10:37:26-16912,config,,,simtime-resolution,ps,
+General-8-20221027-10:37:26-16912,config,,,**.Servente.serviceTime,exponential(1s),
+General-8-20221027-10:37:26-16912,config,,,**.Arrivi.interArrivalTime,exponential(2s),
+General-9-20221027-10:37:26-16912,runattr,,,configname,General,
+General-9-20221027-10:37:26-16912,runattr,,,datetime,20221027-10:37:26,
+General-9-20221027-10:37:26-16912,runattr,,,datetimef,20221027-103726,
+General-9-20221027-10:37:26-16912,runattr,,,experiment,General,
+General-9-20221027-10:37:26-16912,runattr,,,inifile,simu_1.ini,
+General-9-20221027-10:37:26-16912,runattr,,,iterationvars,,
+General-9-20221027-10:37:26-16912,runattr,,,iterationvarsd,,
+General-9-20221027-10:37:26-16912,runattr,,,iterationvarsf,,
+General-9-20221027-10:37:26-16912,runattr,,,measurement,,
+General-9-20221027-10:37:26-16912,runattr,,,network,Rete,
+General-9-20221027-10:37:26-16912,runattr,,,processid,16912,
+General-9-20221027-10:37:26-16912,runattr,,,repetition,9,
+General-9-20221027-10:37:26-16912,runattr,,,replication,#9,
+General-9-20221027-10:37:26-16912,runattr,,,resultdir,results,
+General-9-20221027-10:37:26-16912,runattr,,,runnumber,9,
+General-9-20221027-10:37:26-16912,runattr,,,seedset,9,
+General-9-20221027-10:37:26-16912,config,,,network,Rete,
+General-9-20221027-10:37:26-16912,config,,,record-eventlog,false,
+General-9-20221027-10:37:26-16912,config,,,repeat,10,
+General-9-20221027-10:37:26-16912,config,,,sim-time-limit,1000s,
+General-9-20221027-10:37:26-16912,config,,,simtime-resolution,ps,
+General-9-20221027-10:37:26-16912,config,,,**.Servente.serviceTime,exponential(1s),
+General-9-20221027-10:37:26-16912,config,,,**.Arrivi.interArrivalTime,exponential(2s),
+General-2-20221027-10:37:26-16912,runattr,,,configname,General,
+General-2-20221027-10:37:26-16912,runattr,,,datetime,20221027-10:37:26,
+General-2-20221027-10:37:26-16912,runattr,,,datetimef,20221027-103726,
+General-2-20221027-10:37:26-16912,runattr,,,experiment,General,
+General-2-20221027-10:37:26-16912,runattr,,,inifile,simu_1.ini,
+General-2-20221027-10:37:26-16912,runattr,,,iterationvars,,
+General-2-20221027-10:37:26-16912,runattr,,,iterationvarsd,,
+General-2-20221027-10:37:26-16912,runattr,,,iterationvarsf,,
+General-2-20221027-10:37:26-16912,runattr,,,measurement,,
+General-2-20221027-10:37:26-16912,runattr,,,network,Rete,
+General-2-20221027-10:37:26-16912,runattr,,,processid,16912,
+General-2-20221027-10:37:26-16912,runattr,,,repetition,2,
+General-2-20221027-10:37:26-16912,runattr,,,replication,#2,
+General-2-20221027-10:37:26-16912,runattr,,,resultdir,results,
+General-2-20221027-10:37:26-16912,runattr,,,runnumber,2,
+General-2-20221027-10:37:26-16912,runattr,,,seedset,2,
+General-2-20221027-10:37:26-16912,config,,,network,Rete,
+General-2-20221027-10:37:26-16912,config,,,record-eventlog,false,
+General-2-20221027-10:37:26-16912,config,,,repeat,10,
+General-2-20221027-10:37:26-16912,config,,,sim-time-limit,1000s,
+General-2-20221027-10:37:26-16912,config,,,simtime-resolution,ps,
+General-2-20221027-10:37:26-16912,config,,,**.Servente.serviceTime,exponential(1s),
+General-2-20221027-10:37:26-16912,config,,,**.Arrivi.interArrivalTime,exponential(2s),
+General-0-20221027-10:37:26-16912,runattr,,,configname,General,
+General-0-20221027-10:37:26-16912,runattr,,,datetime,20221027-10:37:26,
+General-0-20221027-10:37:26-16912,runattr,,,datetimef,20221027-103726,
+General-0-20221027-10:37:26-16912,runattr,,,experiment,General,
+General-0-20221027-10:37:26-16912,runattr,,,inifile,simu_1.ini,
+General-0-20221027-10:37:26-16912,runattr,,,iterationvars,,
+General-0-20221027-10:37:26-16912,runattr,,,iterationvarsd,,
+General-0-20221027-10:37:26-16912,runattr,,,iterationvarsf,,
+General-0-20221027-10:37:26-16912,runattr,,,measurement,,
+General-0-20221027-10:37:26-16912,runattr,,,network,Rete,
+General-0-20221027-10:37:26-16912,runattr,,,processid,16912,
+General-0-20221027-10:37:26-16912,runattr,,,repetition,0,
+General-0-20221027-10:37:26-16912,runattr,,,replication,#0,
+General-0-20221027-10:37:26-16912,runattr,,,resultdir,results,
+General-0-20221027-10:37:26-16912,runattr,,,runnumber,0,
+General-0-20221027-10:37:26-16912,runattr,,,seedset,0,
+General-0-20221027-10:37:26-16912,config,,,network,Rete,
+General-0-20221027-10:37:26-16912,config,,,record-eventlog,false,
+General-0-20221027-10:37:26-16912,config,,,repeat,10,
+General-0-20221027-10:37:26-16912,config,,,sim-time-limit,1000s,
+General-0-20221027-10:37:26-16912,config,,,simtime-resolution,ps,
+General-0-20221027-10:37:26-16912,config,,,**.Servente.serviceTime,exponential(1s),
+General-0-20221027-10:37:26-16912,config,,,**.Arrivi.interArrivalTime,exponential(2s),
+General-4-20221027-10:37:26-16912,runattr,,,configname,General,
+General-4-20221027-10:37:26-16912,runattr,,,datetime,20221027-10:37:26,
+General-4-20221027-10:37:26-16912,runattr,,,datetimef,20221027-103726,
+General-4-20221027-10:37:26-16912,runattr,,,experiment,General,
+General-4-20221027-10:37:26-16912,runattr,,,inifile,simu_1.ini,
+General-4-20221027-10:37:26-16912,runattr,,,iterationvars,,
+General-4-20221027-10:37:26-16912,runattr,,,iterationvarsd,,
+General-4-20221027-10:37:26-16912,runattr,,,iterationvarsf,,
+General-4-20221027-10:37:26-16912,runattr,,,measurement,,
+General-4-20221027-10:37:26-16912,runattr,,,network,Rete,
+General-4-20221027-10:37:26-16912,runattr,,,processid,16912,
+General-4-20221027-10:37:26-16912,runattr,,,repetition,4,
+General-4-20221027-10:37:26-16912,runattr,,,replication,#4,
+General-4-20221027-10:37:26-16912,runattr,,,resultdir,results,
+General-4-20221027-10:37:26-16912,runattr,,,runnumber,4,
+General-4-20221027-10:37:26-16912,runattr,,,seedset,4,
+General-4-20221027-10:37:26-16912,config,,,network,Rete,
+General-4-20221027-10:37:26-16912,config,,,record-eventlog,false,
+General-4-20221027-10:37:26-16912,config,,,repeat,10,
+General-4-20221027-10:37:26-16912,config,,,sim-time-limit,1000s,
+General-4-20221027-10:37:26-16912,config,,,simtime-resolution,ps,
+General-4-20221027-10:37:26-16912,config,,,**.Servente.serviceTime,exponential(1s),
+General-4-20221027-10:37:26-16912,config,,,**.Arrivi.interArrivalTime,exponential(2s),
+General-7-20221027-10:37:26-16912,runattr,,,configname,General,
+General-7-20221027-10:37:26-16912,runattr,,,datetime,20221027-10:37:26,
+General-7-20221027-10:37:26-16912,runattr,,,datetimef,20221027-103726,
+General-7-20221027-10:37:26-16912,runattr,,,experiment,General,
+General-7-20221027-10:37:26-16912,runattr,,,inifile,simu_1.ini,
+General-7-20221027-10:37:26-16912,runattr,,,iterationvars,,
+General-7-20221027-10:37:26-16912,runattr,,,iterationvarsd,,
+General-7-20221027-10:37:26-16912,runattr,,,iterationvarsf,,
+General-7-20221027-10:37:26-16912,runattr,,,measurement,,
+General-7-20221027-10:37:26-16912,runattr,,,network,Rete,
+General-7-20221027-10:37:26-16912,runattr,,,processid,16912,
+General-7-20221027-10:37:26-16912,runattr,,,repetition,7,
+General-7-20221027-10:37:26-16912,runattr,,,replication,#7,
+General-7-20221027-10:37:26-16912,runattr,,,resultdir,results,
+General-7-20221027-10:37:26-16912,runattr,,,runnumber,7,
+General-7-20221027-10:37:26-16912,runattr,,,seedset,7,
+General-7-20221027-10:37:26-16912,config,,,network,Rete,
+General-7-20221027-10:37:26-16912,config,,,record-eventlog,false,
+General-7-20221027-10:37:26-16912,config,,,repeat,10,
+General-7-20221027-10:37:26-16912,config,,,sim-time-limit,1000s,
+General-7-20221027-10:37:26-16912,config,,,simtime-resolution,ps,
+General-7-20221027-10:37:26-16912,config,,,**.Servente.serviceTime,exponential(1s),
+General-7-20221027-10:37:26-16912,config,,,**.Arrivi.interArrivalTime,exponential(2s),
+General-0-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:mean,,,0
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,recordingmode,mean,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,title,"the generation of the arrived jobs, mean",
+General-0-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:max,,,0
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,recordingmode,max,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,title,"the generation of the arrived jobs, max",
+General-0-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:mean,,,0
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,recordingmode,mean,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,title,"the total number of delays visited by arrived jobs, mean",
+General-0-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:max,,,0
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,recordingmode,max,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,title,"the total number of delays visited by arrived jobs, max",
+General-0-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:mean,,,0.44676409185804
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,recordingmode,mean,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,title,"the total number of queues visited by arrived jobs, mean",
+General-0-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:max,,,1
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,recordingmode,max,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,title,"the total number of queues visited by arrived jobs, max",
+General-0-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:mean,,,0.97660158807254
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,recordingmode,mean,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,title,"the total time spent  by arrived jobs, mean",
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,unit,s,
+General-0-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:max,,,6.765390519937
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,recordingmode,max,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,title,"the total time spent  by arrived jobs, max",
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,unit,s,
+General-0-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:mean,,,0
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,recordingmode,mean,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,title,"the total time spent in delay nodes by arrived jobs, mean",
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,unit,s,
+General-0-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:max,,,0
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,recordingmode,max,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,title,"the total time spent in delay nodes by arrived jobs, max",
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,unit,s,
+General-0-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:mean,,,0.95659621718037
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,recordingmode,mean,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,title,"the total time spent in queues by arrived jobs, mean",
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,unit,s,
+General-0-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:max,,,10.528832616995
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,recordingmode,max,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,title,"the total time spent in queues by arrived jobs, max",
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,unit,s,
+General-0-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:mean,,,1.9331978052529
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,recordingmode,mean,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,title,"lifetime of arrived jobs, mean",
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,unit,s,
+General-0-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:max,,,11.017623513159
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,recordingmode,max,
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,title,"lifetime of arrived jobs, max",
+General-0-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,unit,s,
+General-0-20221027-10:37:26-16912,scalar,Rete.Arrivi,created:last,,,479
+General-0-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,recordingmode,last,
+General-0-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,title,"the number of jobs created, last",
+General-0-20221027-10:37:26-16912,scalar,Rete.Servente,busy:timeavg,,,0.46779216068675
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,interpolationmode,sample-hold,
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,recordingmode,timeavg,
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,title,"server busy state, timeavg",
+General-0-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:mean,,,0.95659621718037
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,recordingmode,mean,
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,title,"queueing time at dequeue, mean",
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,unit,s,
+General-0-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:max,,,10.528832616995
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,recordingmode,max,
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,title,"queueing time at dequeue, max",
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,unit,s,
+General-0-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:timeavg,,,0.4582095880294
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,interpolationmode,sample-hold,
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,recordingmode,timeavg,
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,title,"queue length, timeavg",
+General-0-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:max,,,10
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,interpolationmode,sample-hold,
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,recordingmode,max,
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,title,"queue length, max",
+General-0-20221027-10:37:26-16912,scalar,Rete.Servente,dropped:count,,,0
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,interpolationmode,none,
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,recordingmode,count,
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,title,"drop event, count",
+General-1-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:mean,,,0
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,recordingmode,mean,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,title,"the generation of the arrived jobs, mean",
+General-1-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:max,,,0
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,recordingmode,max,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,title,"the generation of the arrived jobs, max",
+General-1-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:mean,,,0
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,recordingmode,mean,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,title,"the total number of delays visited by arrived jobs, mean",
+General-1-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:max,,,0
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,recordingmode,max,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,title,"the total number of delays visited by arrived jobs, max",
+General-1-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:mean,,,0.49306930693069
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,recordingmode,mean,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,title,"the total number of queues visited by arrived jobs, mean",
+General-1-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:max,,,1
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,recordingmode,max,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,title,"the total number of queues visited by arrived jobs, max",
+General-1-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:mean,,,1.0006647314756
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,recordingmode,mean,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,title,"the total time spent  by arrived jobs, mean",
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,unit,s,
+General-1-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:max,,,5.923003065532
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,recordingmode,max,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,title,"the total time spent  by arrived jobs, max",
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,unit,s,
+General-1-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:mean,,,0
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,recordingmode,mean,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,title,"the total time spent in delay nodes by arrived jobs, mean",
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,unit,s,
+General-1-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:max,,,0
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,recordingmode,max,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,title,"the total time spent in delay nodes by arrived jobs, max",
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,unit,s,
+General-1-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:mean,,,1.0642221492563
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,recordingmode,mean,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,title,"the total time spent in queues by arrived jobs, mean",
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,unit,s,
+General-1-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:max,,,7.62373597369
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,recordingmode,max,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,title,"the total time spent in queues by arrived jobs, max",
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,unit,s,
+General-1-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:mean,,,2.0648868807319
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,recordingmode,mean,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,title,"lifetime of arrived jobs, mean",
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,unit,s,
+General-1-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:max,,,7.938732053983
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,recordingmode,max,
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,title,"lifetime of arrived jobs, max",
+General-1-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,unit,s,
+General-1-20221027-10:37:26-16912,scalar,Rete.Arrivi,created:last,,,506
+General-1-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,recordingmode,last,
+General-1-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,title,"the number of jobs created, last",
+General-1-20221027-10:37:26-16912,scalar,Rete.Servente,busy:timeavg,,,0.50559021832722
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,interpolationmode,sample-hold,
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,recordingmode,timeavg,
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,title,"server busy state, timeavg",
+General-1-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:mean,,,1.0627484740811
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,recordingmode,mean,
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,title,"queueing time at dequeue, mean",
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,unit,s,
+General-1-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:max,,,7.62373597369
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,recordingmode,max,
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,title,"queueing time at dequeue, max",
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,unit,s,
+General-1-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:timeavg,,,0.53775072788501
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,interpolationmode,sample-hold,
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,recordingmode,timeavg,
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,title,"queue length, timeavg",
+General-1-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:max,,,6
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,interpolationmode,sample-hold,
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,recordingmode,max,
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,title,"queue length, max",
+General-1-20221027-10:37:26-16912,scalar,Rete.Servente,dropped:count,,,0
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,interpolationmode,none,
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,recordingmode,count,
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,title,"drop event, count",
+General-2-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:mean,,,0
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,recordingmode,mean,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,title,"the generation of the arrived jobs, mean",
+General-2-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:max,,,0
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,recordingmode,max,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,title,"the generation of the arrived jobs, max",
+General-2-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:mean,,,0
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,recordingmode,mean,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,title,"the total number of delays visited by arrived jobs, mean",
+General-2-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:max,,,0
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,recordingmode,max,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,title,"the total number of delays visited by arrived jobs, max",
+General-2-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:mean,,,0.5136186770428
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,recordingmode,mean,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,title,"the total number of queues visited by arrived jobs, mean",
+General-2-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:max,,,1
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,recordingmode,max,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,title,"the total number of queues visited by arrived jobs, max",
+General-2-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:mean,,,0.9895785405003
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,recordingmode,mean,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,title,"the total time spent  by arrived jobs, mean",
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,unit,s,
+General-2-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:max,,,6.504467479451
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,recordingmode,max,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,title,"the total time spent  by arrived jobs, max",
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,unit,s,
+General-2-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:mean,,,0
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,recordingmode,mean,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,title,"the total time spent in delay nodes by arrived jobs, mean",
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,unit,s,
+General-2-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:max,,,0
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,recordingmode,max,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,title,"the total time spent in delay nodes by arrived jobs, max",
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,unit,s,
+General-2-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:mean,,,0.88733649979142
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,recordingmode,mean,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,title,"the total time spent in queues by arrived jobs, mean",
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,unit,s,
+General-2-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:max,,,7.974852730258
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,recordingmode,max,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,title,"the total time spent in queues by arrived jobs, max",
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,unit,s,
+General-2-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:mean,,,1.8769150402917
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,recordingmode,mean,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,title,"lifetime of arrived jobs, mean",
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,unit,s,
+General-2-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:max,,,10.057507775601
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,recordingmode,max,
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,title,"lifetime of arrived jobs, max",
+General-2-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,unit,s,
+General-2-20221027-10:37:26-16912,scalar,Rete.Arrivi,created:last,,,516
+General-2-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,recordingmode,last,
+General-2-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,title,"the number of jobs created, last",
+General-2-20221027-10:37:26-16912,scalar,Rete.Servente,busy:timeavg,,,0.51043801809609
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,interpolationmode,sample-hold,
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,recordingmode,timeavg,
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,title,"server busy state, timeavg",
+General-2-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:mean,,,0.88561351629668
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,recordingmode,mean,
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,title,"queueing time at dequeue, mean",
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,unit,s,
+General-2-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:max,,,7.974852730258
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,recordingmode,max,
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,title,"queueing time at dequeue, max",
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,unit,s,
+General-2-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:timeavg,,,0.45630998382001
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,interpolationmode,sample-hold,
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,recordingmode,timeavg,
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,title,"queue length, timeavg",
+General-2-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:max,,,6
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,interpolationmode,sample-hold,
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,recordingmode,max,
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,title,"queue length, max",
+General-2-20221027-10:37:26-16912,scalar,Rete.Servente,dropped:count,,,0
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,interpolationmode,none,
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,recordingmode,count,
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,title,"drop event, count",
+General-3-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:mean,,,0
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,recordingmode,mean,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,title,"the generation of the arrived jobs, mean",
+General-3-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:max,,,0
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,recordingmode,max,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,title,"the generation of the arrived jobs, max",
+General-3-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:mean,,,0
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,recordingmode,mean,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,title,"the total number of delays visited by arrived jobs, mean",
+General-3-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:max,,,0
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,recordingmode,max,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,title,"the total number of delays visited by arrived jobs, max",
+General-3-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:mean,,,0.47302904564315
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,recordingmode,mean,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,title,"the total number of queues visited by arrived jobs, mean",
+General-3-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:max,,,1
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,recordingmode,max,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,title,"the total number of queues visited by arrived jobs, max",
+General-3-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:mean,,,0.95897830285986
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,recordingmode,mean,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,title,"the total time spent  by arrived jobs, mean",
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,unit,s,
+General-3-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:max,,,6.848015202524
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,recordingmode,max,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,title,"the total time spent  by arrived jobs, max",
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,unit,s,
+General-3-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:mean,,,0
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,recordingmode,mean,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,title,"the total time spent in delay nodes by arrived jobs, mean",
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,unit,s,
+General-3-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:max,,,0
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,recordingmode,max,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,title,"the total time spent in delay nodes by arrived jobs, max",
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,unit,s,
+General-3-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:mean,,,0.99238830939473
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,recordingmode,mean,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,title,"the total time spent in queues by arrived jobs, mean",
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,unit,s,
+General-3-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:max,,,9.976483891601
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,recordingmode,max,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,title,"the total time spent in queues by arrived jobs, max",
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,unit,s,
+General-3-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:mean,,,1.9513666122546
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,recordingmode,mean,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,title,"lifetime of arrived jobs, mean",
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,unit,s,
+General-3-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:max,,,10.512800323189
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,recordingmode,max,
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,title,"lifetime of arrived jobs, max",
+General-3-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,unit,s,
+General-3-20221027-10:37:26-16912,scalar,Rete.Arrivi,created:last,,,482
+General-3-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,recordingmode,last,
+General-3-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,title,"the number of jobs created, last",
+General-3-20221027-10:37:26-16912,scalar,Rete.Servente,busy:timeavg,,,0.46222754197845
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,interpolationmode,sample-hold,
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,recordingmode,timeavg,
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,title,"server busy state, timeavg",
+General-3-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:mean,,,0.99238830939473
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,recordingmode,mean,
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,title,"queueing time at dequeue, mean",
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,unit,s,
+General-3-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:max,,,9.976483891601
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,recordingmode,max,
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,title,"queueing time at dequeue, max",
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,unit,s,
+General-3-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:timeavg,,,0.47833116512826
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,interpolationmode,sample-hold,
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,recordingmode,timeavg,
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,title,"queue length, timeavg",
+General-3-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:max,,,10
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,interpolationmode,sample-hold,
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,recordingmode,max,
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,title,"queue length, max",
+General-3-20221027-10:37:26-16912,scalar,Rete.Servente,dropped:count,,,0
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,interpolationmode,none,
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,recordingmode,count,
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,title,"drop event, count",
+General-4-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:mean,,,0
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,recordingmode,mean,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,title,"the generation of the arrived jobs, mean",
+General-4-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:max,,,0
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,recordingmode,max,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,title,"the generation of the arrived jobs, max",
+General-4-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:mean,,,0
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,recordingmode,mean,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,title,"the total number of delays visited by arrived jobs, mean",
+General-4-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:max,,,0
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,recordingmode,max,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,title,"the total number of delays visited by arrived jobs, max",
+General-4-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:mean,,,0.51340206185567
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,recordingmode,mean,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,title,"the total number of queues visited by arrived jobs, mean",
+General-4-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:max,,,1
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,recordingmode,max,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,title,"the total number of queues visited by arrived jobs, max",
+General-4-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:mean,,,1.0050110928919
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,recordingmode,mean,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,title,"the total time spent  by arrived jobs, mean",
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,unit,s,
+General-4-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:max,,,4.688205876607
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,recordingmode,max,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,title,"the total time spent  by arrived jobs, max",
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,unit,s,
+General-4-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:mean,,,0
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,recordingmode,mean,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,title,"the total time spent in delay nodes by arrived jobs, mean",
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,unit,s,
+General-4-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:max,,,0
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,recordingmode,max,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,title,"the total time spent in delay nodes by arrived jobs, max",
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,unit,s,
+General-4-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:mean,,,1.0459993035528
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,recordingmode,mean,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,title,"the total time spent in queues by arrived jobs, mean",
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,unit,s,
+General-4-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:max,,,10.396610905135
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,recordingmode,max,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,title,"the total time spent in queues by arrived jobs, max",
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,unit,s,
+General-4-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:mean,,,2.0510103964447
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,recordingmode,mean,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,title,"lifetime of arrived jobs, mean",
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,unit,s,
+General-4-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:max,,,11.537732188423
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,recordingmode,max,
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,title,"lifetime of arrived jobs, max",
+General-4-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,unit,s,
+General-4-20221027-10:37:26-16912,scalar,Rete.Arrivi,created:last,,,486
+General-4-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,recordingmode,last,
+General-4-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,title,"the number of jobs created, last",
+General-4-20221027-10:37:26-16912,scalar,Rete.Servente,busy:timeavg,,,0.48743814617224
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,interpolationmode,sample-hold,
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,recordingmode,timeavg,
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,title,"server busy state, timeavg",
+General-4-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:mean,,,1.0496860980546
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,recordingmode,mean,
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,title,"queueing time at dequeue, mean",
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,unit,s,
+General-4-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:max,,,10.396610905135
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,recordingmode,max,
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,title,"queueing time at dequeue, max",
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,unit,s,
+General-4-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:timeavg,,,0.51014744365452
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,interpolationmode,sample-hold,
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,recordingmode,timeavg,
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,title,"queue length, timeavg",
+General-4-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:max,,,11
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,interpolationmode,sample-hold,
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,recordingmode,max,
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,title,"queue length, max",
+General-4-20221027-10:37:26-16912,scalar,Rete.Servente,dropped:count,,,0
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,interpolationmode,none,
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,recordingmode,count,
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,title,"drop event, count",
+General-5-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:mean,,,0
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,recordingmode,mean,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,title,"the generation of the arrived jobs, mean",
+General-5-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:max,,,0
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,recordingmode,max,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,title,"the generation of the arrived jobs, max",
+General-5-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:mean,,,0
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,recordingmode,mean,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,title,"the total number of delays visited by arrived jobs, mean",
+General-5-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:max,,,0
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,recordingmode,max,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,title,"the total number of delays visited by arrived jobs, max",
+General-5-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:mean,,,0.51646090534979
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,recordingmode,mean,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,title,"the total number of queues visited by arrived jobs, mean",
+General-5-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:max,,,1
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,recordingmode,max,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,title,"the total number of queues visited by arrived jobs, max",
+General-5-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:mean,,,1.0069913150561
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,recordingmode,mean,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,title,"the total time spent  by arrived jobs, mean",
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,unit,s,
+General-5-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:max,,,6.512854345365
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,recordingmode,max,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,title,"the total time spent  by arrived jobs, max",
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,unit,s,
+General-5-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:mean,,,0
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,recordingmode,mean,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,title,"the total time spent in delay nodes by arrived jobs, mean",
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,unit,s,
+General-5-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:max,,,0
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,recordingmode,max,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,title,"the total time spent in delay nodes by arrived jobs, max",
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,unit,s,
+General-5-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:mean,,,0.94862529298764
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,recordingmode,mean,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,title,"the total time spent in queues by arrived jobs, mean",
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,unit,s,
+General-5-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:max,,,7.185801419547
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,recordingmode,max,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,title,"the total time spent in queues by arrived jobs, max",
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,unit,s,
+General-5-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:mean,,,1.9556166080438
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,recordingmode,mean,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,title,"lifetime of arrived jobs, mean",
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,unit,s,
+General-5-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:max,,,8.488011442749
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,recordingmode,max,
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,title,"lifetime of arrived jobs, max",
+General-5-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,unit,s,
+General-5-20221027-10:37:26-16912,scalar,Rete.Arrivi,created:last,,,486
+General-5-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,recordingmode,last,
+General-5-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,title,"the number of jobs created, last",
+General-5-20221027-10:37:26-16912,scalar,Rete.Servente,busy:timeavg,,,0.48939777911728
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,interpolationmode,sample-hold,
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,recordingmode,timeavg,
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,title,"server busy state, timeavg",
+General-5-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:mean,,,0.94862529298764
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,recordingmode,mean,
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,title,"queueing time at dequeue, mean",
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,unit,s,
+General-5-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:max,,,7.185801419547
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,recordingmode,max,
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,title,"queueing time at dequeue, max",
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,unit,s,
+General-5-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:timeavg,,,0.46103189239199
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,interpolationmode,sample-hold,
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,recordingmode,timeavg,
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,title,"queue length, timeavg",
+General-5-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:max,,,6
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,interpolationmode,sample-hold,
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,recordingmode,max,
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,title,"queue length, max",
+General-5-20221027-10:37:26-16912,scalar,Rete.Servente,dropped:count,,,0
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,interpolationmode,none,
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,recordingmode,count,
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,title,"drop event, count",
+General-6-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:mean,,,0
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,recordingmode,mean,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,title,"the generation of the arrived jobs, mean",
+General-6-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:max,,,0
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,recordingmode,max,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,title,"the generation of the arrived jobs, max",
+General-6-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:mean,,,0
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,recordingmode,mean,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,title,"the total number of delays visited by arrived jobs, mean",
+General-6-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:max,,,0
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,recordingmode,max,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,title,"the total number of delays visited by arrived jobs, max",
+General-6-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:mean,,,0.51247600767754
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,recordingmode,mean,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,title,"the total number of queues visited by arrived jobs, mean",
+General-6-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:max,,,1
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,recordingmode,max,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,title,"the total number of queues visited by arrived jobs, max",
+General-6-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:mean,,,1.0291432086274
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,recordingmode,mean,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,title,"the total time spent  by arrived jobs, mean",
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,unit,s,
+General-6-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:max,,,6.326688663109
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,recordingmode,max,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,title,"the total time spent  by arrived jobs, max",
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,unit,s,
+General-6-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:mean,,,0
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,recordingmode,mean,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,title,"the total time spent in delay nodes by arrived jobs, mean",
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,unit,s,
+General-6-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:max,,,0
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,recordingmode,max,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,title,"the total time spent in delay nodes by arrived jobs, max",
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,unit,s,
+General-6-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:mean,,,1.1071527236541
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,recordingmode,mean,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,title,"the total time spent in queues by arrived jobs, mean",
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,unit,s,
+General-6-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:max,,,8.609607295826
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,recordingmode,max,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,title,"the total time spent in queues by arrived jobs, max",
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,unit,s,
+General-6-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:mean,,,2.1362959322815
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,recordingmode,mean,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,title,"lifetime of arrived jobs, mean",
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,unit,s,
+General-6-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:max,,,9.95614590419
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,recordingmode,max,
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,title,"lifetime of arrived jobs, max",
+General-6-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,unit,s,
+General-6-20221027-10:37:26-16912,scalar,Rete.Arrivi,created:last,,,521
+General-6-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,recordingmode,last,
+General-6-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,title,"the number of jobs created, last",
+General-6-20221027-10:37:26-16912,scalar,Rete.Servente,busy:timeavg,,,0.53618361169488
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,interpolationmode,sample-hold,
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,recordingmode,timeavg,
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,title,"server busy state, timeavg",
+General-6-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:mean,,,1.1071527236541
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,recordingmode,mean,
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,title,"queueing time at dequeue, mean",
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,unit,s,
+General-6-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:max,,,8.609607295826
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,recordingmode,max,
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,title,"queueing time at dequeue, max",
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,unit,s,
+General-6-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:timeavg,,,0.57682656902376
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,interpolationmode,sample-hold,
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,recordingmode,timeavg,
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,title,"queue length, timeavg",
+General-6-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:max,,,8
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,interpolationmode,sample-hold,
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,recordingmode,max,
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,title,"queue length, max",
+General-6-20221027-10:37:26-16912,scalar,Rete.Servente,dropped:count,,,0
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,interpolationmode,none,
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,recordingmode,count,
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,title,"drop event, count",
+General-7-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:mean,,,0
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,recordingmode,mean,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,title,"the generation of the arrived jobs, mean",
+General-7-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:max,,,0
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,recordingmode,max,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,title,"the generation of the arrived jobs, max",
+General-7-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:mean,,,0
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,recordingmode,mean,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,title,"the total number of delays visited by arrived jobs, mean",
+General-7-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:max,,,0
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,recordingmode,max,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,title,"the total number of delays visited by arrived jobs, max",
+General-7-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:mean,,,0.54527162977867
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,recordingmode,mean,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,title,"the total number of queues visited by arrived jobs, mean",
+General-7-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:max,,,1
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,recordingmode,max,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,title,"the total number of queues visited by arrived jobs, max",
+General-7-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:mean,,,1.044406620319
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,recordingmode,mean,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,title,"the total time spent  by arrived jobs, mean",
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,unit,s,
+General-7-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:max,,,7.14133555693
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,recordingmode,max,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,title,"the total time spent  by arrived jobs, max",
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,unit,s,
+General-7-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:mean,,,0
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,recordingmode,mean,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,title,"the total time spent in delay nodes by arrived jobs, mean",
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,unit,s,
+General-7-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:max,,,0
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,recordingmode,max,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,title,"the total time spent in delay nodes by arrived jobs, max",
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,unit,s,
+General-7-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:mean,,,1.2170889814034
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,recordingmode,mean,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,title,"the total time spent in queues by arrived jobs, mean",
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,unit,s,
+General-7-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:max,,,12.30972945425
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,recordingmode,max,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,title,"the total time spent in queues by arrived jobs, max",
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,unit,s,
+General-7-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:mean,,,2.2614956017224
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,recordingmode,mean,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,title,"lifetime of arrived jobs, mean",
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,unit,s,
+General-7-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:max,,,13.582839760714
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,recordingmode,max,
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,title,"lifetime of arrived jobs, max",
+General-7-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,unit,s,
+General-7-20221027-10:37:26-16912,scalar,Rete.Arrivi,created:last,,,498
+General-7-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,recordingmode,last,
+General-7-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,title,"the number of jobs created, last",
+General-7-20221027-10:37:26-16912,scalar,Rete.Servente,busy:timeavg,,,0.51908295089349
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,interpolationmode,sample-hold,
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,recordingmode,timeavg,
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,title,"server busy state, timeavg",
+General-7-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:mean,,,1.2146450276255
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,recordingmode,mean,
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,title,"queueing time at dequeue, mean",
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,unit,s,
+General-7-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:max,,,12.30972945425
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,recordingmode,max,
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,title,"queueing time at dequeue, max",
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,unit,s,
+General-7-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:timeavg,,,0.60489322375749
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,interpolationmode,sample-hold,
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,recordingmode,timeavg,
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,title,"queue length, timeavg",
+General-7-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:max,,,7
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,interpolationmode,sample-hold,
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,recordingmode,max,
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,title,"queue length, max",
+General-7-20221027-10:37:26-16912,scalar,Rete.Servente,dropped:count,,,0
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,interpolationmode,none,
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,recordingmode,count,
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,title,"drop event, count",
+General-8-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:mean,,,0
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,recordingmode,mean,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,title,"the generation of the arrived jobs, mean",
+General-8-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:max,,,0
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,recordingmode,max,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,title,"the generation of the arrived jobs, max",
+General-8-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:mean,,,0
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,recordingmode,mean,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,title,"the total number of delays visited by arrived jobs, mean",
+General-8-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:max,,,0
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,recordingmode,max,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,title,"the total number of delays visited by arrived jobs, max",
+General-8-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:mean,,,0.44490644490644
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,recordingmode,mean,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,title,"the total number of queues visited by arrived jobs, mean",
+General-8-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:max,,,1
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,recordingmode,max,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,title,"the total number of queues visited by arrived jobs, max",
+General-8-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:mean,,,0.95693297242195
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,recordingmode,mean,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,title,"the total time spent  by arrived jobs, mean",
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,unit,s,
+General-8-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:max,,,5.20818905417
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,recordingmode,max,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,title,"the total time spent  by arrived jobs, max",
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,unit,s,
+General-8-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:mean,,,0
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,recordingmode,mean,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,title,"the total time spent in delay nodes by arrived jobs, mean",
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,unit,s,
+General-8-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:max,,,0
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,recordingmode,max,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,title,"the total time spent in delay nodes by arrived jobs, max",
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,unit,s,
+General-8-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:mean,,,0.8258942783427
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,recordingmode,mean,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,title,"the total time spent in queues by arrived jobs, mean",
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,unit,s,
+General-8-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:max,,,7.375000120777
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,recordingmode,max,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,title,"the total time spent in queues by arrived jobs, max",
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,unit,s,
+General-8-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:mean,,,1.7828272507646
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,recordingmode,mean,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,title,"lifetime of arrived jobs, mean",
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,unit,s,
+General-8-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:max,,,8.672036039674
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,recordingmode,max,
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,title,"lifetime of arrived jobs, max",
+General-8-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,unit,s,
+General-8-20221027-10:37:26-16912,scalar,Rete.Arrivi,created:last,,,481
+General-8-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,recordingmode,last,
+General-8-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,title,"the number of jobs created, last",
+General-8-20221027-10:37:26-16912,scalar,Rete.Servente,busy:timeavg,,,0.46028475973496
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,interpolationmode,sample-hold,
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,recordingmode,timeavg,
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,title,"server busy state, timeavg",
+General-8-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:mean,,,0.8258942783427
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,recordingmode,mean,
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,title,"queueing time at dequeue, mean",
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,unit,s,
+General-8-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:max,,,7.375000120777
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,recordingmode,max,
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,title,"queueing time at dequeue, max",
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,unit,s,
+General-8-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:timeavg,,,0.39725514788284
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,interpolationmode,sample-hold,
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,recordingmode,timeavg,
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,title,"queue length, timeavg",
+General-8-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:max,,,7
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,interpolationmode,sample-hold,
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,recordingmode,max,
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,title,"queue length, max",
+General-8-20221027-10:37:26-16912,scalar,Rete.Servente,dropped:count,,,0
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,interpolationmode,none,
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,recordingmode,count,
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,title,"drop event, count",
+General-9-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:mean,,,0
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,recordingmode,mean,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:mean,title,"the generation of the arrived jobs, mean",
+General-9-20221027-10:37:26-16912,scalar,Rete.Pozzo,generation:max,,,0
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,recordingmode,max,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,generation:max,title,"the generation of the arrived jobs, max",
+General-9-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:mean,,,0
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,recordingmode,mean,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:mean,title,"the total number of delays visited by arrived jobs, mean",
+General-9-20221027-10:37:26-16912,scalar,Rete.Pozzo,delaysVisited:max,,,0
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,recordingmode,max,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,delaysVisited:max,title,"the total number of delays visited by arrived jobs, max",
+General-9-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:mean,,,0.53737373737374
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,recordingmode,mean,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:mean,title,"the total number of queues visited by arrived jobs, mean",
+General-9-20221027-10:37:26-16912,scalar,Rete.Pozzo,queuesVisited:max,,,1
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,recordingmode,max,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,queuesVisited:max,title,"the total number of queues visited by arrived jobs, max",
+General-9-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:mean,,,0.98011862969176
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,recordingmode,mean,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,title,"the total time spent  by arrived jobs, mean",
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:mean,unit,s,
+General-9-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalServiceTime:max,,,4.271249468993
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,recordingmode,max,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,title,"the total time spent  by arrived jobs, max",
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalServiceTime:max,unit,s,
+General-9-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:mean,,,0
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,recordingmode,mean,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,title,"the total time spent in delay nodes by arrived jobs, mean",
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:mean,unit,s,
+General-9-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalDelayTime:max,,,0
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,recordingmode,max,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,title,"the total time spent in delay nodes by arrived jobs, max",
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalDelayTime:max,unit,s,
+General-9-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:mean,,,0.96941005029852
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,recordingmode,mean,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,title,"the total time spent in queues by arrived jobs, mean",
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:mean,unit,s,
+General-9-20221027-10:37:26-16912,scalar,Rete.Pozzo,totalQueueingTime:max,,,8.175957479502
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,recordingmode,max,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,title,"the total time spent in queues by arrived jobs, max",
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,totalQueueingTime:max,unit,s,
+General-9-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:mean,,,1.9495286799903
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,recordingmode,mean,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,title,"lifetime of arrived jobs, mean",
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:mean,unit,s,
+General-9-20221027-10:37:26-16912,scalar,Rete.Pozzo,lifeTime:max,,,10.499982619393
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,recordingmode,max,
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,title,"lifetime of arrived jobs, max",
+General-9-20221027-10:37:26-16912,attr,Rete.Pozzo,lifeTime:max,unit,s,
+General-9-20221027-10:37:26-16912,scalar,Rete.Arrivi,created:last,,,495
+General-9-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,recordingmode,last,
+General-9-20221027-10:37:26-16912,attr,Rete.Arrivi,created:last,title,"the number of jobs created, last",
+General-9-20221027-10:37:26-16912,scalar,Rete.Servente,busy:timeavg,,,0.48515872169742
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,interpolationmode,sample-hold,
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,recordingmode,timeavg,
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,busy:timeavg,title,"server busy state, timeavg",
+General-9-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:mean,,,0.96941005029852
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,recordingmode,mean,
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,title,"queueing time at dequeue, mean",
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:mean,unit,s,
+General-9-20221027-10:37:26-16912,scalar,Rete.Servente,queueingTime:max,,,8.175957479502
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,recordingmode,max,
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,title,"queueing time at dequeue, max",
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,queueingTime:max,unit,s,
+General-9-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:timeavg,,,0.47985797489777
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,interpolationmode,sample-hold,
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,recordingmode,timeavg,
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:timeavg,title,"queue length, timeavg",
+General-9-20221027-10:37:26-16912,scalar,Rete.Servente,queueLength:max,,,7
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,interpolationmode,sample-hold,
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,recordingmode,max,
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,queueLength:max,title,"queue length, max",
+General-9-20221027-10:37:26-16912,scalar,Rete.Servente,dropped:count,,,0
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,interpolationmode,none,
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,recordingmode,count,
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,dropped:count,title,"drop event, count",
+General-0-20221027-10:37:26-16912,param,Rete.Pozzo,typename,,,"""org.omnetpp.queueing.Sink"""
+General-0-20221027-10:37:26-16912,param,Rete.Pozzo,keepJobs,,,false
+General-0-20221027-10:37:26-16912,param,Rete.Arrivi,typename,,,"""org.omnetpp.queueing.Source"""
+General-0-20221027-10:37:26-16912,param,Rete.Arrivi,numJobs,,,-1
+General-0-20221027-10:37:26-16912,param,Rete.Arrivi,interArrivalTime,,,exponential(2s)
+General-0-20221027-10:37:26-16912,attr,Rete.Arrivi,interArrivalTime,unit,s,
+General-0-20221027-10:37:26-16912,param,Rete.Arrivi,jobName,,,"""job"""
+General-0-20221027-10:37:26-16912,param,Rete.Arrivi,jobType,,,0
+General-0-20221027-10:37:26-16912,param,Rete.Arrivi,jobPriority,,,0
+General-0-20221027-10:37:26-16912,param,Rete.Arrivi,startTime,,,1.59175s
+General-0-20221027-10:37:26-16912,attr,Rete.Arrivi,startTime,unit,s,
+General-0-20221027-10:37:26-16912,param,Rete.Arrivi,stopTime,,,-1s
+General-0-20221027-10:37:26-16912,attr,Rete.Arrivi,stopTime,unit,s,
+General-0-20221027-10:37:26-16912,param,Rete.Servente,typename,,,"""org.omnetpp.queueing.Queue"""
+General-0-20221027-10:37:26-16912,param,Rete.Servente,capacity,,,-1
+General-0-20221027-10:37:26-16912,param,Rete.Servente,fifo,,,true
+General-0-20221027-10:37:26-16912,param,Rete.Servente,serviceTime,,,exponential(1s)
+General-0-20221027-10:37:26-16912,attr,Rete.Servente,serviceTime,unit,s,
+General-0-20221027-10:37:26-16912,param,Rete,typename,,,"""Rete"""
+General-1-20221027-10:37:26-16912,param,Rete.Pozzo,typename,,,"""org.omnetpp.queueing.Sink"""
+General-1-20221027-10:37:26-16912,param,Rete.Pozzo,keepJobs,,,false
+General-1-20221027-10:37:26-16912,param,Rete.Arrivi,typename,,,"""org.omnetpp.queueing.Source"""
+General-1-20221027-10:37:26-16912,param,Rete.Arrivi,numJobs,,,-1
+General-1-20221027-10:37:26-16912,param,Rete.Arrivi,interArrivalTime,,,exponential(2s)
+General-1-20221027-10:37:26-16912,attr,Rete.Arrivi,interArrivalTime,unit,s,
+General-1-20221027-10:37:26-16912,param,Rete.Arrivi,jobName,,,"""job"""
+General-1-20221027-10:37:26-16912,param,Rete.Arrivi,jobType,,,0
+General-1-20221027-10:37:26-16912,param,Rete.Arrivi,jobPriority,,,0
+General-1-20221027-10:37:26-16912,param,Rete.Arrivi,startTime,,,1.07921s
+General-1-20221027-10:37:26-16912,attr,Rete.Arrivi,startTime,unit,s,
+General-1-20221027-10:37:26-16912,param,Rete.Arrivi,stopTime,,,-1s
+General-1-20221027-10:37:26-16912,attr,Rete.Arrivi,stopTime,unit,s,
+General-1-20221027-10:37:26-16912,param,Rete.Servente,typename,,,"""org.omnetpp.queueing.Queue"""
+General-1-20221027-10:37:26-16912,param,Rete.Servente,capacity,,,-1
+General-1-20221027-10:37:26-16912,param,Rete.Servente,fifo,,,true
+General-1-20221027-10:37:26-16912,param,Rete.Servente,serviceTime,,,exponential(1s)
+General-1-20221027-10:37:26-16912,attr,Rete.Servente,serviceTime,unit,s,
+General-1-20221027-10:37:26-16912,param,Rete,typename,,,"""Rete"""
+General-2-20221027-10:37:26-16912,param,Rete.Pozzo,typename,,,"""org.omnetpp.queueing.Sink"""
+General-2-20221027-10:37:26-16912,param,Rete.Pozzo,keepJobs,,,false
+General-2-20221027-10:37:26-16912,param,Rete.Arrivi,typename,,,"""org.omnetpp.queueing.Source"""
+General-2-20221027-10:37:26-16912,param,Rete.Arrivi,numJobs,,,-1
+General-2-20221027-10:37:26-16912,param,Rete.Arrivi,interArrivalTime,,,exponential(2s)
+General-2-20221027-10:37:26-16912,attr,Rete.Arrivi,interArrivalTime,unit,s,
+General-2-20221027-10:37:26-16912,param,Rete.Arrivi,jobName,,,"""job"""
+General-2-20221027-10:37:26-16912,param,Rete.Arrivi,jobType,,,0
+General-2-20221027-10:37:26-16912,param,Rete.Arrivi,jobPriority,,,0
+General-2-20221027-10:37:26-16912,param,Rete.Arrivi,startTime,,,1.14538s
+General-2-20221027-10:37:26-16912,attr,Rete.Arrivi,startTime,unit,s,
+General-2-20221027-10:37:26-16912,param,Rete.Arrivi,stopTime,,,-1s
+General-2-20221027-10:37:26-16912,attr,Rete.Arrivi,stopTime,unit,s,
+General-2-20221027-10:37:26-16912,param,Rete.Servente,typename,,,"""org.omnetpp.queueing.Queue"""
+General-2-20221027-10:37:26-16912,param,Rete.Servente,capacity,,,-1
+General-2-20221027-10:37:26-16912,param,Rete.Servente,fifo,,,true
+General-2-20221027-10:37:26-16912,param,Rete.Servente,serviceTime,,,exponential(1s)
+General-2-20221027-10:37:26-16912,attr,Rete.Servente,serviceTime,unit,s,
+General-2-20221027-10:37:26-16912,param,Rete,typename,,,"""Rete"""
+General-3-20221027-10:37:26-16912,param,Rete.Pozzo,typename,,,"""org.omnetpp.queueing.Sink"""
+General-3-20221027-10:37:26-16912,param,Rete.Pozzo,keepJobs,,,false
+General-3-20221027-10:37:26-16912,param,Rete.Arrivi,typename,,,"""org.omnetpp.queueing.Source"""
+General-3-20221027-10:37:26-16912,param,Rete.Arrivi,numJobs,,,-1
+General-3-20221027-10:37:26-16912,param,Rete.Arrivi,interArrivalTime,,,exponential(2s)
+General-3-20221027-10:37:26-16912,attr,Rete.Arrivi,interArrivalTime,unit,s,
+General-3-20221027-10:37:26-16912,param,Rete.Arrivi,jobName,,,"""job"""
+General-3-20221027-10:37:26-16912,param,Rete.Arrivi,jobType,,,0
+General-3-20221027-10:37:26-16912,param,Rete.Arrivi,jobPriority,,,0
+General-3-20221027-10:37:26-16912,param,Rete.Arrivi,startTime,,,1.60056s
+General-3-20221027-10:37:26-16912,attr,Rete.Arrivi,startTime,unit,s,
+General-3-20221027-10:37:26-16912,param,Rete.Arrivi,stopTime,,,-1s
+General-3-20221027-10:37:26-16912,attr,Rete.Arrivi,stopTime,unit,s,
+General-3-20221027-10:37:26-16912,param,Rete.Servente,typename,,,"""org.omnetpp.queueing.Queue"""
+General-3-20221027-10:37:26-16912,param,Rete.Servente,capacity,,,-1
+General-3-20221027-10:37:26-16912,param,Rete.Servente,fifo,,,true
+General-3-20221027-10:37:26-16912,param,Rete.Servente,serviceTime,,,exponential(1s)
+General-3-20221027-10:37:26-16912,attr,Rete.Servente,serviceTime,unit,s,
+General-3-20221027-10:37:26-16912,param,Rete,typename,,,"""Rete"""
+General-4-20221027-10:37:26-16912,param,Rete.Pozzo,typename,,,"""org.omnetpp.queueing.Sink"""
+General-4-20221027-10:37:26-16912,param,Rete.Pozzo,keepJobs,,,false
+General-4-20221027-10:37:26-16912,param,Rete.Arrivi,typename,,,"""org.omnetpp.queueing.Source"""
+General-4-20221027-10:37:26-16912,param,Rete.Arrivi,numJobs,,,-1
+General-4-20221027-10:37:26-16912,param,Rete.Arrivi,interArrivalTime,,,exponential(2s)
+General-4-20221027-10:37:26-16912,attr,Rete.Arrivi,interArrivalTime,unit,s,
+General-4-20221027-10:37:26-16912,param,Rete.Arrivi,jobName,,,"""job"""
+General-4-20221027-10:37:26-16912,param,Rete.Arrivi,jobType,,,0
+General-4-20221027-10:37:26-16912,param,Rete.Arrivi,jobPriority,,,0
+General-4-20221027-10:37:26-16912,param,Rete.Arrivi,startTime,,,6.8243s
+General-4-20221027-10:37:26-16912,attr,Rete.Arrivi,startTime,unit,s,
+General-4-20221027-10:37:26-16912,param,Rete.Arrivi,stopTime,,,-1s
+General-4-20221027-10:37:26-16912,attr,Rete.Arrivi,stopTime,unit,s,
+General-4-20221027-10:37:26-16912,param,Rete.Servente,typename,,,"""org.omnetpp.queueing.Queue"""
+General-4-20221027-10:37:26-16912,param,Rete.Servente,capacity,,,-1
+General-4-20221027-10:37:26-16912,param,Rete.Servente,fifo,,,true
+General-4-20221027-10:37:26-16912,param,Rete.Servente,serviceTime,,,exponential(1s)
+General-4-20221027-10:37:26-16912,attr,Rete.Servente,serviceTime,unit,s,
+General-4-20221027-10:37:26-16912,param,Rete,typename,,,"""Rete"""
+General-5-20221027-10:37:26-16912,param,Rete.Pozzo,typename,,,"""org.omnetpp.queueing.Sink"""
+General-5-20221027-10:37:26-16912,param,Rete.Pozzo,keepJobs,,,false
+General-5-20221027-10:37:26-16912,param,Rete.Arrivi,typename,,,"""org.omnetpp.queueing.Source"""
+General-5-20221027-10:37:26-16912,param,Rete.Arrivi,numJobs,,,-1
+General-5-20221027-10:37:26-16912,param,Rete.Arrivi,interArrivalTime,,,exponential(2s)
+General-5-20221027-10:37:26-16912,attr,Rete.Arrivi,interArrivalTime,unit,s,
+General-5-20221027-10:37:26-16912,param,Rete.Arrivi,jobName,,,"""job"""
+General-5-20221027-10:37:26-16912,param,Rete.Arrivi,jobType,,,0
+General-5-20221027-10:37:26-16912,param,Rete.Arrivi,jobPriority,,,0
+General-5-20221027-10:37:26-16912,param,Rete.Arrivi,startTime,,,0.50204s
+General-5-20221027-10:37:26-16912,attr,Rete.Arrivi,startTime,unit,s,
+General-5-20221027-10:37:26-16912,param,Rete.Arrivi,stopTime,,,-1s
+General-5-20221027-10:37:26-16912,attr,Rete.Arrivi,stopTime,unit,s,
+General-5-20221027-10:37:26-16912,param,Rete.Servente,typename,,,"""org.omnetpp.queueing.Queue"""
+General-5-20221027-10:37:26-16912,param,Rete.Servente,capacity,,,-1
+General-5-20221027-10:37:26-16912,param,Rete.Servente,fifo,,,true
+General-5-20221027-10:37:26-16912,param,Rete.Servente,serviceTime,,,exponential(1s)
+General-5-20221027-10:37:26-16912,attr,Rete.Servente,serviceTime,unit,s,
+General-5-20221027-10:37:26-16912,param,Rete,typename,,,"""Rete"""
+General-6-20221027-10:37:26-16912,param,Rete.Pozzo,typename,,,"""org.omnetpp.queueing.Sink"""
+General-6-20221027-10:37:26-16912,param,Rete.Pozzo,keepJobs,,,false
+General-6-20221027-10:37:26-16912,param,Rete.Arrivi,typename,,,"""org.omnetpp.queueing.Source"""
+General-6-20221027-10:37:26-16912,param,Rete.Arrivi,numJobs,,,-1
+General-6-20221027-10:37:26-16912,param,Rete.Arrivi,interArrivalTime,,,exponential(2s)
+General-6-20221027-10:37:26-16912,attr,Rete.Arrivi,interArrivalTime,unit,s,
+General-6-20221027-10:37:26-16912,param,Rete.Arrivi,jobName,,,"""job"""
+General-6-20221027-10:37:26-16912,param,Rete.Arrivi,jobType,,,0
+General-6-20221027-10:37:26-16912,param,Rete.Arrivi,jobPriority,,,0
+General-6-20221027-10:37:26-16912,param,Rete.Arrivi,startTime,,,4.46724s
+General-6-20221027-10:37:26-16912,attr,Rete.Arrivi,startTime,unit,s,
+General-6-20221027-10:37:26-16912,param,Rete.Arrivi,stopTime,,,-1s
+General-6-20221027-10:37:26-16912,attr,Rete.Arrivi,stopTime,unit,s,
+General-6-20221027-10:37:26-16912,param,Rete.Servente,typename,,,"""org.omnetpp.queueing.Queue"""
+General-6-20221027-10:37:26-16912,param,Rete.Servente,capacity,,,-1
+General-6-20221027-10:37:26-16912,param,Rete.Servente,fifo,,,true
+General-6-20221027-10:37:26-16912,param,Rete.Servente,serviceTime,,,exponential(1s)
+General-6-20221027-10:37:26-16912,attr,Rete.Servente,serviceTime,unit,s,
+General-6-20221027-10:37:26-16912,param,Rete,typename,,,"""Rete"""
+General-7-20221027-10:37:26-16912,param,Rete.Pozzo,typename,,,"""org.omnetpp.queueing.Sink"""
+General-7-20221027-10:37:26-16912,param,Rete.Pozzo,keepJobs,,,false
+General-7-20221027-10:37:26-16912,param,Rete.Arrivi,typename,,,"""org.omnetpp.queueing.Source"""
+General-7-20221027-10:37:26-16912,param,Rete.Arrivi,numJobs,,,-1
+General-7-20221027-10:37:26-16912,param,Rete.Arrivi,interArrivalTime,,,exponential(2s)
+General-7-20221027-10:37:26-16912,attr,Rete.Arrivi,interArrivalTime,unit,s,
+General-7-20221027-10:37:26-16912,param,Rete.Arrivi,jobName,,,"""job"""
+General-7-20221027-10:37:26-16912,param,Rete.Arrivi,jobType,,,0
+General-7-20221027-10:37:26-16912,param,Rete.Arrivi,jobPriority,,,0
+General-7-20221027-10:37:26-16912,param,Rete.Arrivi,startTime,,,0.158754s
+General-7-20221027-10:37:26-16912,attr,Rete.Arrivi,startTime,unit,s,
+General-7-20221027-10:37:26-16912,param,Rete.Arrivi,stopTime,,,-1s
+General-7-20221027-10:37:26-16912,attr,Rete.Arrivi,stopTime,unit,s,
+General-7-20221027-10:37:26-16912,param,Rete.Servente,typename,,,"""org.omnetpp.queueing.Queue"""
+General-7-20221027-10:37:26-16912,param,Rete.Servente,capacity,,,-1
+General-7-20221027-10:37:26-16912,param,Rete.Servente,fifo,,,true
+General-7-20221027-10:37:26-16912,param,Rete.Servente,serviceTime,,,exponential(1s)
+General-7-20221027-10:37:26-16912,attr,Rete.Servente,serviceTime,unit,s,
+General-7-20221027-10:37:26-16912,param,Rete,typename,,,"""Rete"""
+General-8-20221027-10:37:26-16912,param,Rete.Pozzo,typename,,,"""org.omnetpp.queueing.Sink"""
+General-8-20221027-10:37:26-16912,param,Rete.Pozzo,keepJobs,,,false
+General-8-20221027-10:37:26-16912,param,Rete.Arrivi,typename,,,"""org.omnetpp.queueing.Source"""
+General-8-20221027-10:37:26-16912,param,Rete.Arrivi,numJobs,,,-1
+General-8-20221027-10:37:26-16912,param,Rete.Arrivi,interArrivalTime,,,exponential(2s)
+General-8-20221027-10:37:26-16912,attr,Rete.Arrivi,interArrivalTime,unit,s,
+General-8-20221027-10:37:26-16912,param,Rete.Arrivi,jobName,,,"""job"""
+General-8-20221027-10:37:26-16912,param,Rete.Arrivi,jobType,,,0
+General-8-20221027-10:37:26-16912,param,Rete.Arrivi,jobPriority,,,0
+General-8-20221027-10:37:26-16912,param,Rete.Arrivi,startTime,,,4.13391s
+General-8-20221027-10:37:26-16912,attr,Rete.Arrivi,startTime,unit,s,
+General-8-20221027-10:37:26-16912,param,Rete.Arrivi,stopTime,,,-1s
+General-8-20221027-10:37:26-16912,attr,Rete.Arrivi,stopTime,unit,s,
+General-8-20221027-10:37:26-16912,param,Rete.Servente,typename,,,"""org.omnetpp.queueing.Queue"""
+General-8-20221027-10:37:26-16912,param,Rete.Servente,capacity,,,-1
+General-8-20221027-10:37:26-16912,param,Rete.Servente,fifo,,,true
+General-8-20221027-10:37:26-16912,param,Rete.Servente,serviceTime,,,exponential(1s)
+General-8-20221027-10:37:26-16912,attr,Rete.Servente,serviceTime,unit,s,
+General-8-20221027-10:37:26-16912,param,Rete,typename,,,"""Rete"""
+General-9-20221027-10:37:26-16912,param,Rete.Pozzo,typename,,,"""org.omnetpp.queueing.Sink"""
+General-9-20221027-10:37:26-16912,param,Rete.Pozzo,keepJobs,,,false
+General-9-20221027-10:37:26-16912,param,Rete.Arrivi,typename,,,"""org.omnetpp.queueing.Source"""
+General-9-20221027-10:37:26-16912,param,Rete.Arrivi,numJobs,,,-1
+General-9-20221027-10:37:26-16912,param,Rete.Arrivi,interArrivalTime,,,exponential(2s)
+General-9-20221027-10:37:26-16912,attr,Rete.Arrivi,interArrivalTime,unit,s,
+General-9-20221027-10:37:26-16912,param,Rete.Arrivi,jobName,,,"""job"""
+General-9-20221027-10:37:26-16912,param,Rete.Arrivi,jobType,,,0
+General-9-20221027-10:37:26-16912,param,Rete.Arrivi,jobPriority,,,0
+General-9-20221027-10:37:26-16912,param,Rete.Arrivi,startTime,,,0.0208567s
+General-9-20221027-10:37:26-16912,attr,Rete.Arrivi,startTime,unit,s,
+General-9-20221027-10:37:26-16912,param,Rete.Arrivi,stopTime,,,-1s
+General-9-20221027-10:37:26-16912,attr,Rete.Arrivi,stopTime,unit,s,
+General-9-20221027-10:37:26-16912,param,Rete.Servente,typename,,,"""org.omnetpp.queueing.Queue"""
+General-9-20221027-10:37:26-16912,param,Rete.Servente,capacity,,,-1
+General-9-20221027-10:37:26-16912,param,Rete.Servente,fifo,,,true
+General-9-20221027-10:37:26-16912,param,Rete.Servente,serviceTime,,,exponential(1s)
+General-9-20221027-10:37:26-16912,attr,Rete.Servente,serviceTime,unit,s,
+General-9-20221027-10:37:26-16912,param,Rete,typename,,,"""Rete"""
