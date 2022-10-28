@@ -1,0 +1,140 @@
+version 3
+run General-28-20221028-09:56:53-16128
+attr configname General
+attr datetime 20221028-09:56:53
+attr datetimef 20221028-095653
+attr experiment General
+attr inifile simu_1.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Rete
+attr processid 16128
+attr repetition 28
+attr replication #28
+attr resultdir results
+attr runnumber 28
+attr seedset 28
+config network Rete
+config record-eventlog false
+config repeat 30
+config sim-time-limit 1000s
+config simtime-resolution ps
+config **.Servente.serviceTime exponential(1s)
+config **.Arrivi.interArrivalTime exponential(2s)
+
+par Rete.Pozzo typename "\"org.omnetpp.queueing.Sink\""
+par Rete.Pozzo keepJobs false
+scalar Rete.Pozzo generation:mean 0
+attr interpolationmode none
+attr recordingmode mean
+attr title "the generation of the arrived jobs, mean"
+scalar Rete.Pozzo generation:max 0
+attr interpolationmode none
+attr recordingmode max
+attr title "the generation of the arrived jobs, max"
+scalar Rete.Pozzo delaysVisited:mean 0
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total number of delays visited by arrived jobs, mean"
+scalar Rete.Pozzo delaysVisited:max 0
+attr interpolationmode none
+attr recordingmode max
+attr title "the total number of delays visited by arrived jobs, max"
+scalar Rete.Pozzo queuesVisited:mean 0.52941176470588
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total number of queues visited by arrived jobs, mean"
+scalar Rete.Pozzo queuesVisited:max 1
+attr interpolationmode none
+attr recordingmode max
+attr title "the total number of queues visited by arrived jobs, max"
+scalar Rete.Pozzo totalServiceTime:mean 1.0024814747061
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total time spent  by arrived jobs, mean"
+attr unit s
+scalar Rete.Pozzo totalServiceTime:max 5.473109937847
+attr interpolationmode none
+attr recordingmode max
+attr title "the total time spent  by arrived jobs, max"
+attr unit s
+scalar Rete.Pozzo totalDelayTime:mean 0
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total time spent in delay nodes by arrived jobs, mean"
+attr unit s
+scalar Rete.Pozzo totalDelayTime:max 0
+attr interpolationmode none
+attr recordingmode max
+attr title "the total time spent in delay nodes by arrived jobs, max"
+attr unit s
+scalar Rete.Pozzo totalQueueingTime:mean 1.0996841656027
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total time spent in queues by arrived jobs, mean"
+attr unit s
+scalar Rete.Pozzo totalQueueingTime:max 6.8193640175
+attr interpolationmode none
+attr recordingmode max
+attr title "the total time spent in queues by arrived jobs, max"
+attr unit s
+scalar Rete.Pozzo lifeTime:mean 2.1021656403088
+attr interpolationmode none
+attr recordingmode mean
+attr title "lifetime of arrived jobs, mean"
+attr unit s
+scalar Rete.Pozzo lifeTime:max 8.497259442722
+attr interpolationmode none
+attr recordingmode max
+attr title "lifetime of arrived jobs, max"
+attr unit s
+par Rete.Arrivi typename "\"org.omnetpp.queueing.Source\""
+par Rete.Arrivi numJobs -1
+par Rete.Arrivi interArrivalTime exponential(2s)
+attr unit s
+par Rete.Arrivi jobName "\"job\""
+par Rete.Arrivi jobType 0
+par Rete.Arrivi jobPriority 0
+par Rete.Arrivi startTime 2.61137s
+attr unit s
+par Rete.Arrivi stopTime -1s
+attr unit s
+scalar Rete.Arrivi created:last 510
+attr interpolationmode none
+attr recordingmode last
+attr title "the number of jobs created, last"
+par Rete.Servente typename "\"org.omnetpp.queueing.Queue\""
+par Rete.Servente capacity -1
+par Rete.Servente fifo true
+par Rete.Servente serviceTime exponential(1s)
+attr unit s
+scalar Rete.Servente busy:timeavg 0.51126555210011
+attr interpolationmode sample-hold
+attr recordingmode timeavg
+attr title "server busy state, timeavg"
+scalar Rete.Servente queueingTime:mean 1.0996841656027
+attr interpolationmode none
+attr recordingmode mean
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Rete.Servente queueingTime:max 6.8193640175
+attr interpolationmode none
+attr recordingmode max
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Rete.Servente queueLength:timeavg 0.56083892445736
+attr interpolationmode sample-hold
+attr recordingmode timeavg
+attr title "queue length, timeavg"
+scalar Rete.Servente queueLength:max 6
+attr interpolationmode sample-hold
+attr recordingmode max
+attr title "queue length, max"
+scalar Rete.Servente dropped:count 0
+attr interpolationmode none
+attr recordingmode count
+attr title "drop event, count"
+par Rete typename "\"Rete\""
+

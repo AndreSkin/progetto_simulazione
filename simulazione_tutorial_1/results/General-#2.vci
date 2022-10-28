@@ -1,9 +1,9 @@
-file 35019 1666859846                                           
+file 35019 1666943812                                           
 version 3
-run General-2-20221027-10:37:26-16912
+run General-2-20221028-09:56:52-16128
 attr configname General
-attr datetime 20221027-10:37:26
-attr datetimef 20221027-103726
+attr datetime 20221028-09:56:52
+attr datetimef 20221028-095652
 attr experiment General
 attr inifile simu_1.ini
 attr iterationvars ""
@@ -11,7 +11,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Rete
-attr processid 16912
+attr processid 16128
 attr repetition 2
 attr replication #2
 attr resultdir results
@@ -19,7 +19,7 @@ attr runnumber 2
 attr seedset 2
 config network Rete
 config record-eventlog false
-config repeat 10
+config repeat 30
 config sim-time-limit 1000s
 config simtime-resolution ps
 config **.Servente.serviceTime exponential(1s)

@@ -1,0 +1,39 @@
+file 33538 1666943812                                           
+version 3
+run General-16-20221028-09:56:52-16128
+attr configname General
+attr datetime 20221028-09:56:52
+attr datetimef 20221028-095652
+attr experiment General
+attr inifile simu_1.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Rete
+attr processid 16128
+attr repetition 16
+attr replication #16
+attr resultdir results
+attr runnumber 16
+attr seedset 16
+config network Rete
+config record-eventlog false
+config repeat 30
+config sim-time-limit 1000s
+config simtime-resolution ps
+config **.Servente.serviceTime exponential(1s)
+config **.Arrivi.interArrivalTime exponential(2s)
+
+vector 0 Rete.Servente queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 1 Rete.Pozzo lifeTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "lifetime of arrived jobs"
+attr unit s
+0	941 12561 0 2052 0 999.380346914385 478 0 9 811 3103
+1	13502 20034 4 2048 1.2459605281 998.894085665365 512 0.00198637314 13.640577180515 1024.2176497702 4856.6269818111
+
