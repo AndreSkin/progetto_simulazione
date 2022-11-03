@@ -1,0 +1,66 @@
+file 120061 1667470122                                          
+version 3
+run General-0-20221103-11:07:17-4724
+attr configname General
+attr datetime 20221103-11:07:17
+attr datetimef 20221103-110717
+attr experiment General
+attr inifile block.ini
+attr iterationvars "$0=2, $1=10"
+attr iterationvarsd 2/10
+attr iterationvarsf 2,10-
+attr measurement "$0=2, $1=10"
+attr network Block
+attr processid 4724
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network Block
+config repeat 5
+config sim-time-limit 1000s
+config warmup-period 100s
+config **.alloca.resourceModuleName "\"risorse\""
+config **.dealloca.resourceModuleName "\"risorse\""
+config **.is.delay exponential(3s)
+config **.servente.serviceTime exponential(2s)
+config **.dealloca.resourceAmount 2
+config **.alloca.resourceAmount 2
+config **.risorse.amount 6
+config **.sorgente.numJobs (10)
+config **.result-recording-modes all
+
+vector 0 Block.is delayedJobs:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "number of delayed jobs"
+vector 1 Block.alloca queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 2 Block.servente queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 3 Block.servente queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 4 Block.alloca queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 5 Block.risorse amount:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "available resource"
+0	1768 23712 339 3008 100.3442494445 999.857312392395 890 0 8 1751 5065
+1	25480 23606 340 3006 100.3442494445 999.857312392395 886 0 7 4481 24159
+2	49086 23715 341 3007 107.888221999704 999.857312392395 890 1 2 1335 2225
+3	72801 17607 341 3005 107.888221999704 999.857312392395 445 0.16430903891 12.736239191326 1803.3669949481 10503.931222724
+4	90408 17740 342 3006 107.888221999704 999.857312392395 443 0.65797376291 26.975256166966 4962.6235627619 64934.36150725
+5	108148 11911 342 3006 107.888221999704 999.857312392395 447 0 2 4 8
+

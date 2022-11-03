@@ -1,0 +1,66 @@
+file 78352 1667467702                                           
+version 3
+run General-17-20221103-10:28:22-6760
+attr configname General
+attr datetime 20221103-10:28:22
+attr datetimef 20221103-102822
+attr experiment General
+attr inifile block.ini
+attr iterationvars "$0=3, $1=10"
+attr iterationvarsd 3/10
+attr iterationvarsf 3,10-
+attr measurement "$0=3, $1=10"
+attr network Block
+attr processid 6760
+attr repetition 2
+attr replication #2
+attr resultdir results
+attr runnumber 17
+attr seedset 17
+config network Block
+config repeat 5
+config sim-time-limit 1000s
+config warmup-period 100s
+config **.alloca.resourceModuleName "\"risorse\""
+config **.dealloca.resourceModuleName "\"risorse\""
+config **.is.delay exponential(3s)
+config **.servente.serviceTime exponential(3s)
+config **.dealloca.resourceAmount 2
+config **.alloca.resourceAmount 2
+config **.risorse.amount 6
+config **.sorgente.numJobs (10)
+config **.result-recording-modes all
+
+vector 0 Block.servente queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 1 Block.servente queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 2 Block.alloca queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 3 Block.alloca queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 4 Block.risorse amount:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "available resource"
+vector 5 Block.is delayedJobs:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "number of delayed jobs"
+0	1771 15298 299 2025 101.338150892282 998.106290844309 578 1 2 867 1445
+1	17069 11432 299 2023 101.338150892282 998.106290844309 289 0.157837039169 24.915569984233 1806.1095436484 16946.223220218
+2	28501 15282 300 2030 101.338150892282 999.037938235197 577 0 7 3084 17360
+3	43783 11635 300 2024 101.338150892282 998.106290844309 289 1.573319032684 44.787163538913 5319.1476356956 118071.752954
+4	55418 7649 300 2024 101.338150892282 998.106290844309 289 0 0 0 0
+5	63067 15283 302 2029 101.338150892282 999.037938235197 577 0 7 955 2457
+

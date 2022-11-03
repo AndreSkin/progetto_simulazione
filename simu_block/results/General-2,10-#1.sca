@@ -1,0 +1,124 @@
+version 3
+run General-1-20221103-10:28:21-6760
+attr configname General
+attr datetime 20221103-10:28:21
+attr datetimef 20221103-102821
+attr experiment General
+attr inifile block.ini
+attr iterationvars "$0=2, $1=10"
+attr iterationvarsd 2/10
+attr iterationvarsf 2,10-
+attr measurement "$0=2, $1=10"
+attr network Block
+attr processid 6760
+attr repetition 1
+attr replication #1
+attr resultdir results
+attr runnumber 1
+attr seedset 1
+config network Block
+config repeat 5
+config sim-time-limit 1000s
+config warmup-period 100s
+config **.alloca.resourceModuleName "\"risorse\""
+config **.dealloca.resourceModuleName "\"risorse\""
+config **.is.delay exponential(3s)
+config **.servente.serviceTime exponential(2s)
+config **.dealloca.resourceAmount 2
+config **.alloca.resourceAmount 2
+config **.risorse.amount 6
+config **.sorgente.numJobs (10)
+config **.result-recording-modes all
+
+par Block.alloca typename "\"org.omnetpp.queueing.Allocate\""
+par Block.alloca capacity -1
+par Block.alloca fifo true
+par Block.alloca resourceModuleName "\"risorse\""
+par Block.alloca resourceAmount 2
+par Block.alloca resourcePriority 0
+scalar Block.alloca queueingTime:mean 10.117407408769
+attr interpolationmode none
+attr recordingmode mean
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Block.alloca queueingTime:max 33.325653434617
+attr interpolationmode none
+attr recordingmode max
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Block.alloca queueLength:timeavg 5.3240849784614
+attr interpolationmode sample-hold
+attr recordingmode timeavg
+attr title "queue length, timeavg"
+scalar Block.alloca queueLength:max 7
+attr interpolationmode sample-hold
+attr recordingmode max
+attr title "queue length, max"
+scalar Block.alloca dropped:count 0
+attr interpolationmode none
+attr recordingmode count
+attr title "drop event, count"
+par Block.dealloca typename "\"org.omnetpp.queueing.Deallocate\""
+par Block.dealloca resourceModuleName "\"risorse\""
+par Block.dealloca resourceAmount 2
+par Block.sorgente typename "\"org.omnetpp.queueing.SourceOnce\""
+par Block.sorgente numJobs 10
+par Block.sorgente time 0s
+attr unit s
+par Block.sorgente jobName "\"job\""
+par Block.sorgente jobType 0
+par Block.sorgente jobPriority 0
+par Block.risorse typename "\"org.omnetpp.queueing.ResourcePool\""
+par Block.risorse amount 6
+scalar Block.risorse amount:timeavg 0
+attr interpolationmode sample-hold
+attr recordingmode timeavg
+attr title "available resource, timeavg"
+scalar Block.risorse amount:min 0
+attr interpolationmode sample-hold
+attr recordingmode min
+attr title "available resource, min"
+par Block.is typename "\"org.omnetpp.queueing.Delay\""
+par Block.is delay exponential(3s)
+attr unit s
+scalar Block.is delayedJobs:timeavg 1.6759150215386
+attr interpolationmode sample-hold
+attr recordingmode timeavg
+attr title "number of delayed jobs, timeavg"
+scalar Block.is delayedJobs:max 7
+attr interpolationmode sample-hold
+attr recordingmode max
+attr title "number of delayed jobs, max"
+par Block.servente typename "\"org.omnetpp.queueing.Queue\""
+par Block.servente capacity -1
+par Block.servente fifo true
+par Block.servente serviceTime exponential(2s)
+attr unit s
+scalar Block.servente busy:timeavg nan
+attr interpolationmode sample-hold
+attr recordingmode timeavg
+attr title "server busy state, timeavg"
+scalar Block.servente queueingTime:mean 3.7684446757873
+attr interpolationmode none
+attr recordingmode mean
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Block.servente queueingTime:max 18.452582493204
+attr interpolationmode none
+attr recordingmode max
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Block.servente queueLength:timeavg 2
+attr interpolationmode sample-hold
+attr recordingmode timeavg
+attr title "queue length, timeavg"
+scalar Block.servente queueLength:max 2
+attr interpolationmode sample-hold
+attr recordingmode max
+attr title "queue length, max"
+scalar Block.servente dropped:count 0
+attr interpolationmode none
+attr recordingmode count
+attr title "drop event, count"
+par Block typename "\"Block\""
+

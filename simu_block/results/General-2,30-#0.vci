@@ -1,0 +1,66 @@
+file 134047 1667467702                                          
+version 3
+run General-10-20221103-10:28:21-6760
+attr configname General
+attr datetime 20221103-10:28:21
+attr datetimef 20221103-102821
+attr experiment General
+attr inifile block.ini
+attr iterationvars "$0=2, $1=30"
+attr iterationvarsd 2/30
+attr iterationvarsf 2,30-
+attr measurement "$0=2, $1=30"
+attr network Block
+attr processid 6760
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 10
+attr seedset 10
+config network Block
+config repeat 5
+config sim-time-limit 1000s
+config warmup-period 100s
+config **.alloca.resourceModuleName "\"risorse\""
+config **.dealloca.resourceModuleName "\"risorse\""
+config **.is.delay exponential(3s)
+config **.servente.serviceTime exponential(2s)
+config **.dealloca.resourceAmount 2
+config **.alloca.resourceAmount 2
+config **.risorse.amount 6
+config **.sorgente.numJobs (30)
+config **.result-recording-modes all
+
+vector 0 Block.is delayedJobs:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "number of delayed jobs"
+vector 1 Block.alloca queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 2 Block.servente queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 3 Block.servente queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 4 Block.alloca queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 5 Block.risorse amount:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "available resource"
+0	1771 26280 487 3435 100.440737215063 998.703133925511 984 0 8 2048 6068
+1	28051 27265 488 3436 100.440737215063 998.703133925511 984 19 27 24520 612812
+2	55316 26224 491 3433 102.35679479164 995.568971872312 982 1 2 1473 2455
+3	81540 19456 491 3431 102.35679479164 995.568971872312 491 0.068422270773 15.777482740941 1788.6379212206 9532.7049277346
+4	100996 19937 492 3432 102.35679479164 995.568971872312 491 23.286952160883 82.00534856394 22492.294751822 1084100.1856215
+5	120933 13112 492 3432 102.35679479164 995.568971872312 491 0 0 0 0
+

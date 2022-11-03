@@ -1,0 +1,66 @@
+file 72808 1667467702                                           
+version 3
+run General-29-20221103-10:28:22-6760
+attr configname General
+attr datetime 20221103-10:28:22
+attr datetimef 20221103-102822
+attr experiment General
+attr inifile block.ini
+attr iterationvars "$0=3, $1=30"
+attr iterationvarsd 3/30
+attr iterationvarsf 3,30-
+attr measurement "$0=3, $1=30"
+attr network Block
+attr processid 6760
+attr repetition 4
+attr replication #4
+attr resultdir results
+attr runnumber 29
+attr seedset 29
+config network Block
+config repeat 5
+config sim-time-limit 1000s
+config warmup-period 100s
+config **.alloca.resourceModuleName "\"risorse\""
+config **.dealloca.resourceModuleName "\"risorse\""
+config **.is.delay exponential(3s)
+config **.servente.serviceTime exponential(3s)
+config **.dealloca.resourceAmount 2
+config **.alloca.resourceAmount 2
+config **.risorse.amount 6
+config **.sorgente.numJobs (30)
+config **.result-recording-modes all
+
+vector 0 Block.servente queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 1 Block.servente queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 2 Block.alloca queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 3 Block.alloca queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 4 Block.risorse amount:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "available resource"
+vector 5 Block.is delayedJobs:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "number of delayed jobs"
+0	1771 14070 287 1879 105.368173364734 995.737991461525 532 1 2 798 1330
+1	15841 10522 287 1877 105.368173364734 995.737991461525 266 0.102812344935 25.111407002247 1807.816125812 17492.398854616
+2	26363 14603 288 1882 105.368173364734 998.322670745367 532 22 27 13674 352010
+3	40966 10735 288 1878 105.368173364734 995.737991461525 266 46.092744935493 114.94935107047 23551.129179202 2147364.428764
+4	51701 7035 288 1878 105.368173364734 995.737991461525 266 0 0 0 0
+5	58736 14070 290 1881 105.368173364734 998.322670745367 532 0 5 690 1442
+

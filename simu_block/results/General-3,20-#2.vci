@@ -1,0 +1,66 @@
+file 77023 1667467702                                           
+version 3
+run General-22-20221103-10:28:22-6760
+attr configname General
+attr datetime 20221103-10:28:22
+attr datetimef 20221103-102822
+attr experiment General
+attr inifile block.ini
+attr iterationvars "$0=3, $1=20"
+attr iterationvarsd 3/20
+attr iterationvarsf 3,20-
+attr measurement "$0=3, $1=20"
+attr network Block
+attr processid 6760
+attr repetition 2
+attr replication #2
+attr resultdir results
+attr runnumber 22
+attr seedset 22
+config network Block
+config repeat 5
+config sim-time-limit 1000s
+config warmup-period 100s
+config **.alloca.resourceModuleName "\"risorse\""
+config **.dealloca.resourceModuleName "\"risorse\""
+config **.is.delay exponential(3s)
+config **.servente.serviceTime exponential(3s)
+config **.dealloca.resourceAmount 2
+config **.alloca.resourceAmount 2
+config **.risorse.amount 6
+config **.sorgente.numJobs (20)
+config **.result-recording-modes all
+
+vector 0 Block.is delayedJobs:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "number of delayed jobs"
+vector 1 Block.alloca queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 2 Block.servente queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 3 Block.servente queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 4 Block.alloca queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 5 Block.risorse amount:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "available resource"
+0	1771 14904 231 1922 100.681279042502 999.828182661364 564 0 5 802 1726
+1	16675 15468 232 1920 100.681279042502 999.828182661364 564 12 17 8786 137454
+2	32143 14907 233 1921 102.608250009427 999.828182661364 564 1 2 846 1410
+3	47050 11146 233 1919 102.608250009427 999.828182661364 282 0.100606987293 25.897393495278 1794.330088255 16291.347154978
+4	58196 11371 234 1920 102.608250009427 999.828182661364 282 29.93372653378 78.789172978951 14506.467155131 778154.64401448
+5	69567 7454 234 1920 102.608250009427 999.828182661364 282 0 0 0 0
+

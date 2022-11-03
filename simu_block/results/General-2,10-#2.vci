@@ -1,0 +1,66 @@
+file 123289 1667467701                                          
+version 3
+run General-2-20221103-10:28:21-6760
+attr configname General
+attr datetime 20221103-10:28:21
+attr datetimef 20221103-102821
+attr experiment General
+attr inifile block.ini
+attr iterationvars "$0=2, $1=10"
+attr iterationvarsd 2/10
+attr iterationvarsf 2,10-
+attr measurement "$0=2, $1=10"
+attr network Block
+attr processid 6760
+attr repetition 2
+attr replication #2
+attr resultdir results
+attr runnumber 2
+attr seedset 2
+config network Block
+config repeat 5
+config sim-time-limit 1000s
+config warmup-period 100s
+config **.alloca.resourceModuleName "\"risorse\""
+config **.dealloca.resourceModuleName "\"risorse\""
+config **.is.delay exponential(3s)
+config **.servente.serviceTime exponential(2s)
+config **.dealloca.resourceAmount 2
+config **.alloca.resourceAmount 2
+config **.risorse.amount 6
+config **.sorgente.numJobs (10)
+config **.result-recording-modes all
+
+vector 0 Block.servente queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 1 Block.servente queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 2 Block.alloca queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 3 Block.alloca queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 4 Block.risorse amount:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "available resource"
+vector 5 Block.is delayedJobs:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "number of delayed jobs"
+0	1768 24366 321 3055 100.404651402735 998.180345142656 914 0 2 1369 2281
+1	26134 18086 321 3053 100.404651402735 998.180345142656 457 0.029734695342 17.045999329227 1807.5763145307 10774.958290515
+2	44220 24237 322 3060 100.404651402735 999.836362756176 909 0 7 4505 24283
+3	68457 18249 322 3054 100.404651402735 998.180345142656 455 0.017594279606 29.771986174858 4993.1451356077 68152.850246188
+4	86706 12237 322 3054 100.404651402735 998.180345142656 459 0 4 8 24
+5	98943 24344 324 3059 100.404651402735 999.836362756176 913 0 9 1890 6012
+

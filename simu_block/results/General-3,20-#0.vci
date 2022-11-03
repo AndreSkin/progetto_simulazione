@@ -1,0 +1,66 @@
+file 74320 1667467702                                           
+version 3
+run General-20-20221103-10:28:22-6760
+attr configname General
+attr datetime 20221103-10:28:22
+attr datetimef 20221103-102822
+attr experiment General
+attr inifile block.ini
+attr iterationvars "$0=3, $1=20"
+attr iterationvarsd 3/20
+attr iterationvarsf 3,20-
+attr measurement "$0=3, $1=20"
+attr network Block
+attr processid 6760
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 20
+attr seedset 20
+config network Block
+config repeat 5
+config sim-time-limit 1000s
+config warmup-period 100s
+config **.alloca.resourceModuleName "\"risorse\""
+config **.dealloca.resourceModuleName "\"risorse\""
+config **.is.delay exponential(3s)
+config **.servente.serviceTime exponential(3s)
+config **.dealloca.resourceAmount 2
+config **.alloca.resourceAmount 2
+config **.risorse.amount 6
+config **.sorgente.numJobs (20)
+config **.result-recording-modes all
+
+vector 0 Block.is delayedJobs:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "number of delayed jobs"
+vector 1 Block.alloca queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 2 Block.servente queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 3 Block.servente queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 4 Block.alloca queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 5 Block.risorse amount:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "available resource"
+0	1771 14358 273 1902 100.934582400173 996.324185074294 543 0 5 827 1943
+1	16129 14900 274 1900 100.934582400173 996.324185074294 543 12 17 8404 130752
+2	31029 14384 275 1901 103.093271839774 996.324185074294 544 1 2 816 1360
+3	45413 10756 275 1899 103.093271839774 996.324185074294 272 0.388094931598 21.991544896399 1794.6815711711 16989.448779769
+4	56169 10957 276 1900 103.093271839774 996.324185074294 272 25.62394479525 78.610699551961 14292.662010898 794477.00391292
+5	67126 7192 276 1900 103.093271839774 996.324185074294 272 0 0 0 0
+

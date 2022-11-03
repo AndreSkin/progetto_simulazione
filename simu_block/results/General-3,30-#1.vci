@@ -1,0 +1,66 @@
+file 89405 1667467702                                           
+version 3
+run General-26-20221103-10:28:22-6760
+attr configname General
+attr datetime 20221103-10:28:22
+attr datetimef 20221103-102822
+attr experiment General
+attr inifile block.ini
+attr iterationvars "$0=3, $1=30"
+attr iterationvarsd 3/30
+attr iterationvarsf 3,30-
+attr measurement "$0=3, $1=30"
+attr network Block
+attr processid 6760
+attr repetition 1
+attr replication #1
+attr resultdir results
+attr runnumber 26
+attr seedset 26
+config network Block
+config repeat 5
+config sim-time-limit 1000s
+config warmup-period 100s
+config **.alloca.resourceModuleName "\"risorse\""
+config **.dealloca.resourceModuleName "\"risorse\""
+config **.is.delay exponential(3s)
+config **.servente.serviceTime exponential(3s)
+config **.dealloca.resourceAmount 2
+config **.alloca.resourceAmount 2
+config **.risorse.amount 6
+config **.sorgente.numJobs (30)
+config **.result-recording-modes all
+
+vector 0 Block.is delayedJobs:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "number of delayed jobs"
+vector 1 Block.alloca queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 2 Block.servente queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 3 Block.servente queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 4 Block.alloca queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 5 Block.risorse amount:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "available resource"
+0	1771 17409 275 2239 103.876222452319 999.815297130007 656 0 6 1034 2412
+1	19180 18066 276 2240 103.876222452319 999.815297130007 656 21 27 16678 424800
+2	37246 17354 277 2235 104.502449570999 999.132176877238 654 1 2 981 1635
+3	54600 12919 277 2233 104.502449570999 999.132176877238 327 0.246230990668 29.666576681795 1803.8341263635 14680.471198102
+4	67519 13207 278 2234 104.502449570999 999.132176877238 327 43.658994555037 101.78157164608 23580.212945334 1741160.7842125
+5	80726 8677 278 2234 104.502449570999 999.132176877238 327 0 0 0 0
+

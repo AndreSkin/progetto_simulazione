@@ -1,0 +1,66 @@
+file 57699 1667467702                                           
+version 3
+run General-38-20221103-10:28:22-6760
+attr configname General
+attr datetime 20221103-10:28:22
+attr datetimef 20221103-102822
+attr experiment General
+attr inifile block.ini
+attr iterationvars "$0=4, $1=20"
+attr iterationvarsd 4/20
+attr iterationvarsf 4,20-
+attr measurement "$0=4, $1=20"
+attr network Block
+attr processid 6760
+attr repetition 3
+attr replication #3
+attr resultdir results
+attr runnumber 38
+attr seedset 38
+config network Block
+config repeat 5
+config sim-time-limit 1000s
+config warmup-period 100s
+config **.alloca.resourceModuleName "\"risorse\""
+config **.dealloca.resourceModuleName "\"risorse\""
+config **.is.delay exponential(3s)
+config **.servente.serviceTime exponential(4s)
+config **.dealloca.resourceAmount 2
+config **.alloca.resourceAmount 2
+config **.risorse.amount 6
+config **.sorgente.numJobs (20)
+config **.result-recording-modes all
+
+vector 0 Block.servente queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 1 Block.servente queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 2 Block.alloca queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 3 Block.alloca queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 4 Block.risorse amount:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "available resource"
+vector 5 Block.is delayedJobs:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "number of delayed jobs"
+0	1771 11085 251 1511 109.632319873051 999.675542010342 422 1 2 633 1055
+1	12856 8332 251 1509 109.632319873051 999.675542010342 211 0.252090098236 29.977689680829 1819.9116245381 22787.389638586
+2	21188 11454 252 1510 109.632319873051 999.675542010342 420 12 17 6632 105102
+3	32642 8478 252 1510 109.632319873051 999.675542010342 211 32.65999713512 104.49828381305 14745.856030159 1062674.0410324
+4	41120 5543 252 1510 109.632319873051 999.675542010342 211 0 0 0 0
+5	46663 11034 254 1512 109.632319873051 999.675542010342 420 0 5 508 994
+

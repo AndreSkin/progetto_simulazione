@@ -1,0 +1,66 @@
+file 64257 1667467702                                           
+version 3
+run General-31-20221103-10:28:22-6760
+attr configname General
+attr datetime 20221103-10:28:22
+attr datetimef 20221103-102822
+attr experiment General
+attr inifile block.ini
+attr iterationvars "$0=4, $1=10"
+attr iterationvarsd 4/10
+attr iterationvarsf 4,10-
+attr measurement "$0=4, $1=10"
+attr network Block
+attr processid 6760
+attr repetition 1
+attr replication #1
+attr resultdir results
+attr runnumber 31
+attr seedset 31
+config network Block
+config repeat 5
+config sim-time-limit 1000s
+config warmup-period 100s
+config **.alloca.resourceModuleName "\"risorse\""
+config **.dealloca.resourceModuleName "\"risorse\""
+config **.is.delay exponential(3s)
+config **.servente.serviceTime exponential(4s)
+config **.dealloca.resourceAmount 2
+config **.alloca.resourceAmount 2
+config **.risorse.amount 6
+config **.sorgente.numJobs (10)
+config **.result-recording-modes all
+
+vector 0 Block.servente queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 1 Block.servente queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 2 Block.alloca queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 3 Block.alloca queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 4 Block.risorse amount:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "available resource"
+vector 5 Block.is delayedJobs:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "number of delayed jobs"
+0	1771 12459 171 1589 108.717276995597 997.8584497353 474 1 2 711 1185
+1	14230 9342 171 1587 108.717276995597 997.8584497353 237 0.177199743003 24.325213468222 1794.8795079387 18937.409966555
+2	23572 12467 172 1592 108.717276995597 998.226205803995 474 3 7 2755 16461
+3	36039 9519 172 1588 108.717276995597 997.8584497353 237 5.614994650544 48.649887358758 5606.45266139 151631.25088863
+4	45558 6230 172 1588 108.717276995597 997.8584497353 237 0 0 0 0
+5	51788 12467 174 1591 108.717276995597 998.226205803995 474 0 4 563 1117
+

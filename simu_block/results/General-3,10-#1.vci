@@ -1,0 +1,66 @@
+file 83954 1667467702                                           
+version 3
+run General-16-20221103-10:28:22-6760
+attr configname General
+attr datetime 20221103-10:28:22
+attr datetimef 20221103-102822
+attr experiment General
+attr inifile block.ini
+attr iterationvars "$0=3, $1=10"
+attr iterationvarsd 3/10
+attr iterationvarsf 3,10-
+attr measurement "$0=3, $1=10"
+attr network Block
+attr processid 6760
+attr repetition 1
+attr replication #1
+attr resultdir results
+attr runnumber 16
+attr seedset 16
+config network Block
+config repeat 5
+config sim-time-limit 1000s
+config warmup-period 100s
+config **.alloca.resourceModuleName "\"risorse\""
+config **.dealloca.resourceModuleName "\"risorse\""
+config **.is.delay exponential(3s)
+config **.servente.serviceTime exponential(3s)
+config **.dealloca.resourceAmount 2
+config **.alloca.resourceAmount 2
+config **.risorse.amount 6
+config **.sorgente.numJobs (10)
+config **.result-recording-modes all
+
+vector 0 Block.is delayedJobs:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "number of delayed jobs"
+vector 1 Block.alloca queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 2 Block.servente queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 3 Block.servente queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 4 Block.alloca queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 5 Block.risorse amount:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "available resource"
+0	1771 16403 255 2112 101.993410347365 999.632565467366 619 0 6 935 2189
+1	18174 16403 256 2110 101.993410347365 999.632565467366 619 1 7 3398 19430
+2	34577 16431 257 2111 102.026135825706 999.632565467366 620 1 2 930 1550
+3	51008 12249 257 2109 102.026135825706 999.632565467366 310 0.306554861907 31.757448467516 1803.2091690604 15776.114271321
+4	63257 12479 258 2110 102.026135825706 999.632565467366 310 0.553181631353 47.979944062938 5405.1633300994 111737.93081781
+5	75736 8216 258 2110 102.026135825706 999.632565467366 310 0 0 0 0
+

@@ -1,9 +1,9 @@
-file 34161 1666943813                                           
+file 34160 1667465098                                           
 version 3
-run General-26-20221028-09:56:53-16128
+run General-26-20221103-09:44:57-15908
 attr configname General
-attr datetime 20221028-09:56:53
-attr datetimef 20221028-095653
+attr datetime 20221103-09:44:57
+attr datetimef 20221103-094457
 attr experiment General
 attr inifile simu_1.ini
 attr iterationvars ""
@@ -11,14 +11,14 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Rete
-attr processid 16128
+attr processid 15908
 attr repetition 26
 attr replication #26
 attr resultdir results
 attr runnumber 26
 attr seedset 26
 config network Rete
-config record-eventlog false
+config record-eventlog true
 config repeat 30
 config sim-time-limit 1000s
 config simtime-resolution ps
@@ -34,6 +34,6 @@ attr interpolationmode none
 attr recordingmode vector
 attr title "lifetime of arrived jobs"
 attr unit s
-0	941 13526 0 2016 0 998.797163568982 516 0 9 680 1882
-1	14467 19692 4 2012 1.468852881032 996.594981949443 503 0.005057075366 10.215606987727 970.8907057469 3682.913014705
+0	940 13526 0 2016 0 998.797163568982 516 0 9 680 1882
+1	14466 19692 4 2012 1.468852881032 996.594981949443 503 0.005057075366 10.215606987727 970.8907057469 3682.913014705
 

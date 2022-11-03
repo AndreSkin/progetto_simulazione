@@ -1,0 +1,66 @@
+file 62302 1667467702                                           
+version 3
+run General-39-20221103-10:28:22-6760
+attr configname General
+attr datetime 20221103-10:28:22
+attr datetimef 20221103-102822
+attr experiment General
+attr inifile block.ini
+attr iterationvars "$0=4, $1=20"
+attr iterationvarsd 4/20
+attr iterationvarsf 4,20-
+attr measurement "$0=4, $1=20"
+attr network Block
+attr processid 6760
+attr repetition 4
+attr replication #4
+attr resultdir results
+attr runnumber 39
+attr seedset 39
+config network Block
+config repeat 5
+config sim-time-limit 1000s
+config warmup-period 100s
+config **.alloca.resourceModuleName "\"risorse\""
+config **.dealloca.resourceModuleName "\"risorse\""
+config **.is.delay exponential(3s)
+config **.servente.serviceTime exponential(4s)
+config **.dealloca.resourceAmount 2
+config **.alloca.resourceAmount 2
+config **.risorse.amount 6
+config **.sorgente.numJobs (20)
+config **.result-recording-modes all
+
+vector 0 Block.servente queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 1 Block.servente queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 2 Block.alloca queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 3 Block.alloca queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 4 Block.risorse amount:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "available resource"
+vector 5 Block.is delayedJobs:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "number of delayed jobs"
+0	1771 11980 225 1585 102.385435809938 987.477243774426 454 1 2 681 1135
+1	13751 8961 225 1583 102.385435809938 987.477243774426 227 0.813231506165 34.539907365348 1779.4196632108 20962.004802439
+2	22712 12456 226 1588 102.385435809938 993.819848062166 455 12 17 7192 114112
+3	35168 9142 226 1584 102.385435809938 987.477243774426 227 30.977715216914 115.98180218724 14420.414578887 989652.56978913
+4	44310 5990 226 1584 102.385435809938 987.477243774426 227 0 0 0 0
+5	50300 12000 228 1587 102.385435809938 993.819848062166 455 0 5 543 1079
+

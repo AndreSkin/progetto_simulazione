@@ -1,0 +1,66 @@
+file 119463 1667467701                                          
+version 3
+run General-5-20221103-10:28:21-6760
+attr configname General
+attr datetime 20221103-10:28:21
+attr datetimef 20221103-102821
+attr experiment General
+attr inifile block.ini
+attr iterationvars "$0=2, $1=20"
+attr iterationvarsd 2/20
+attr iterationvarsf 2,20-
+attr measurement "$0=2, $1=20"
+attr network Block
+attr processid 6760
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 5
+attr seedset 5
+config network Block
+config repeat 5
+config sim-time-limit 1000s
+config warmup-period 100s
+config **.alloca.resourceModuleName "\"risorse\""
+config **.dealloca.resourceModuleName "\"risorse\""
+config **.is.delay exponential(3s)
+config **.servente.serviceTime exponential(2s)
+config **.dealloca.resourceAmount 2
+config **.alloca.resourceAmount 2
+config **.risorse.amount 6
+config **.sorgente.numJobs (20)
+config **.result-recording-modes all
+
+vector 0 Block.is delayedJobs:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "number of delayed jobs"
+vector 1 Block.alloca queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 2 Block.servente queueLength:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "queue length"
+vector 3 Block.servente queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 4 Block.alloca queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr title "queueing time at dequeue"
+attr unit s
+vector 5 Block.risorse amount:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr title "available resource"
+0	1768 23379 355 2985 101.97541626389 999.964175900488 878 0 7 1673 4527
+1	25147 24257 356 2986 101.97541626389 999.964175900488 878 10 17 13253 201387
+2	49404 23323 357 2979 103.12979833188 996.852294949646 876 1 2 1314 2190
+3	72727 17322 357 2977 103.12979833188 996.852294949646 438 0.178383438958 16.403713717396 1798.0804272758 11074.671977358
+4	90049 17750 358 2978 103.12979833188 996.852294949646 438 12.51564399482 54.472550186715 13868.129576999 470383.09546883
+5	107799 11662 358 2978 103.12979833188 996.852294949646 438 0 0 0 0
+
