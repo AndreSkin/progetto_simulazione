@@ -10,25 +10,25 @@ import org.omnetpp.queueing.SourceOnce;
 //
 network Block
 {
-     @display("bgb=465,318");
+    @display("bgb=465,318");
     submodules:
         alloca: Allocate {
-            @display("p=140,187");
+            @display("p=141,198");
         }
         dealloca: Deallocate {
-            @display("p=354,187");
+            @display("p=294,64");
         }
         sorgente: SourceOnce {
-            @display("p=41,73");
+            @display("p=39,64");
         }
         risorse: ResourcePool {
-            @display("p=233,248");
+            @display("p=69,262");
         }
         is: Delay {
-            @display("p=141,71");
+            @display("p=141,64");
         }
         servente: Queue {
-            @display("p=276,80");
+            @display("p=294,198");
         }
     connections:
         sorgente.out --> is.in++;
