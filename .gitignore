@@ -3,3 +3,5 @@
 *.exe
 /simulazione_tutorial_1/.ipynb_checkpoints
 /simu_block/.ipynb_checkpoints
+/simu_block/results/
+*.lnk
