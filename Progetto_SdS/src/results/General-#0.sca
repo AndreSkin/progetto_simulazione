@@ -1,8 +1,8 @@
 version 3
-run General-0-20230218-09:42:06-7164
+run General-0-20230218-09:59:17-5528
 attr configname General
-attr datetime 20230218-09:42:06
-attr datetimef 20230218-094206
+attr datetime 20230218-09:59:17
+attr datetimef 20230218-095917
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -10,7 +10,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Network
-attr processid 7164
+attr processid 5528
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -34,7 +34,7 @@ par Network.S1 startTime 0s
 attr unit s
 par Network.S1 stopTime -1s
 attr unit s
-scalar Network.S1 created:last 289099
+scalar Network.S1 created:last 234131
 attr interpolationmode none
 attr recordingmode last
 attr title "the number of jobs created, last"
@@ -49,7 +49,7 @@ par Network.S2 startTime 0s
 attr unit s
 par Network.S2 stopTime -1s
 attr unit s
-scalar Network.S2 created:last 289099
+scalar Network.S2 created:last 234131
 attr interpolationmode none
 attr recordingmode last
 attr title "the number of jobs created, last"
@@ -73,7 +73,7 @@ scalar Network.first queueLength:timeavg nan
 attr interpolationmode sample-hold
 attr recordingmode timeavg
 attr title "queue length, timeavg"
-scalar Network.first queueLength:max 144550
+scalar Network.first queueLength:max 175597
 attr interpolationmode sample-hold
 attr recordingmode max
 attr title "queue length, max"
@@ -101,7 +101,7 @@ scalar Network.second queueLength:timeavg nan
 attr interpolationmode sample-hold
 attr recordingmode timeavg
 attr title "queue length, timeavg"
-scalar Network.second queueLength:max 289096
+scalar Network.second queueLength:max 175598
 attr interpolationmode sample-hold
 attr recordingmode max
 attr title "queue length, max"
@@ -136,7 +136,7 @@ scalar Network.sink delaysVisited:max 0
 attr interpolationmode none
 attr recordingmode max
 attr title "the total number of delays visited by arrived jobs, max"
-scalar Network.sink queuesVisited:mean 1.9999861637657
+scalar Network.sink queuesVisited:mean 1.9999829153284
 attr interpolationmode none
 attr recordingmode mean
 attr title "the total number of queues visited by arrived jobs, mean"

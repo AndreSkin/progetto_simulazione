@@ -227,12 +227,24 @@ int ThresholdSelectionStrategy::select()
     L2 = (check_and_cast<IPassiveQueue *>(Queue_2))->length();
     EV << "L1 = "<<L1<<"\t L2 = "<< L2<<"\n";
 
-    if (L1 >= first_thr)
+    //Controllo superamento threshold
+    bool over_1 = L1 >= first_thr;
+    bool over_2 = L2 >= second_thr;
+
+    //Se tutte e due hanno superato threshold, le alterno
+    if((over_1) && (over_2))
+    {
+        int toSelect = 1 - lastSelected;
+        lastSelected = toSelect;
+        return toSelect;
+    }
+
+    if (over_1)
     {
         lastSelected = first_queue;
         return first_queue;
     }
-    else if (L2 >= second_thr)
+    else if (over_2)
     {
         lastSelected = second_queue;
         return second_queue;
