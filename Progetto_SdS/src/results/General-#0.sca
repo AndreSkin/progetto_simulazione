@@ -1,0 +1,254 @@
+version 3
+run General-0-20230218-09:42:06-7164
+attr configname General
+attr datetime 20230218-09:42:06
+attr datetimef 20230218-094206
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 7164
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config network Network
+config **.S1.interArrivalTime 0s
+config **.S2.interArrivalTime 0s
+config **.servente.serviceTime 0s
+config **.first.Threshold 5
+config **.second.Threshold 3
+
+par Network.S1 typename "\"progetto_sds.queueing_utils.Source\""
+par Network.S1 numJobs -1
+par Network.S1 interArrivalTime 0s
+attr unit s
+par Network.S1 jobName "\"job\""
+par Network.S1 jobType 0
+par Network.S1 jobPriority 0
+par Network.S1 startTime 0s
+attr unit s
+par Network.S1 stopTime -1s
+attr unit s
+scalar Network.S1 created:last 289099
+attr interpolationmode none
+attr recordingmode last
+attr title "the number of jobs created, last"
+par Network.S2 typename "\"progetto_sds.queueing_utils.Source\""
+par Network.S2 numJobs -1
+par Network.S2 interArrivalTime 0s
+attr unit s
+par Network.S2 jobName "\"job\""
+par Network.S2 jobType 0
+par Network.S2 jobPriority 0
+par Network.S2 startTime 0s
+attr unit s
+par Network.S2 stopTime -1s
+attr unit s
+scalar Network.S2 created:last 289099
+attr interpolationmode none
+attr recordingmode last
+attr title "the number of jobs created, last"
+par Network.first typename "\"progetto_sds.queueing_utils.PassiveQueue\""
+par Network.first capacity -1
+par Network.first fifo true
+par Network.first sendingAlgorithm "\"priority\""
+attr enum priority,random,roundRobin,minDelay
+par Network.first Threshold 5
+scalar Network.first queueingTime:mean 0
+attr interpolationmode none
+attr recordingmode mean
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.first queueingTime:max 0
+attr interpolationmode none
+attr recordingmode max
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.first queueLength:timeavg nan
+attr interpolationmode sample-hold
+attr recordingmode timeavg
+attr title "queue length, timeavg"
+scalar Network.first queueLength:max 144550
+attr interpolationmode sample-hold
+attr recordingmode max
+attr title "queue length, max"
+scalar Network.first dropped:count 0
+attr interpolationmode none
+attr recordingmode count
+attr title "drop event, count"
+par Network.second typename "\"progetto_sds.queueing_utils.PassiveQueue\""
+par Network.second capacity -1
+par Network.second fifo true
+par Network.second sendingAlgorithm "\"priority\""
+attr enum priority,random,roundRobin,minDelay
+par Network.second Threshold 3
+scalar Network.second queueingTime:mean 0
+attr interpolationmode none
+attr recordingmode mean
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.second queueingTime:max 0
+attr interpolationmode none
+attr recordingmode max
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.second queueLength:timeavg nan
+attr interpolationmode sample-hold
+attr recordingmode timeavg
+attr title "queue length, timeavg"
+scalar Network.second queueLength:max 289096
+attr interpolationmode sample-hold
+attr recordingmode max
+attr title "queue length, max"
+scalar Network.second dropped:count 0
+attr interpolationmode none
+attr recordingmode count
+attr title "drop event, count"
+par Network.servente typename "\"progetto_sds.queueing_utils.Server\""
+par Network.servente fetchingAlgorithm "\"threshold\""
+attr enum priority,random,roundRobin,longestQueue,threshold
+par Network.servente serviceTime 0s
+attr unit s
+scalar Network.servente busy:timeavg nan
+attr interpolationmode sample-hold
+attr recordingmode timeavg
+attr title "server busy state, timeavg"
+par Network.sink typename "\"progetto_sds.queueing_utils.Sink\""
+par Network.sink keepJobs false
+scalar Network.sink generation:mean 0
+attr interpolationmode none
+attr recordingmode mean
+attr title "the generation of the arrived jobs, mean"
+scalar Network.sink generation:max 0
+attr interpolationmode none
+attr recordingmode max
+attr title "the generation of the arrived jobs, max"
+scalar Network.sink delaysVisited:mean 0
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total number of delays visited by arrived jobs, mean"
+scalar Network.sink delaysVisited:max 0
+attr interpolationmode none
+attr recordingmode max
+attr title "the total number of delays visited by arrived jobs, max"
+scalar Network.sink queuesVisited:mean 1.9999861637657
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total number of queues visited by arrived jobs, mean"
+scalar Network.sink queuesVisited:max 2
+attr interpolationmode none
+attr recordingmode max
+attr title "the total number of queues visited by arrived jobs, max"
+scalar Network.sink totalServiceTime:mean 0
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total time spent  by arrived jobs, mean"
+attr unit s
+scalar Network.sink totalServiceTime:max 0
+attr interpolationmode none
+attr recordingmode max
+attr title "the total time spent  by arrived jobs, max"
+attr unit s
+scalar Network.sink totalDelayTime:mean 0
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total time spent in delay nodes by arrived jobs, mean"
+attr unit s
+scalar Network.sink totalDelayTime:max 0
+attr interpolationmode none
+attr recordingmode max
+attr title "the total time spent in delay nodes by arrived jobs, max"
+attr unit s
+scalar Network.sink totalQueueingTime:mean 0
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total time spent in queues by arrived jobs, mean"
+attr unit s
+scalar Network.sink totalQueueingTime:max 0
+attr interpolationmode none
+attr recordingmode max
+attr title "the total time spent in queues by arrived jobs, max"
+attr unit s
+scalar Network.sink lifeTime:mean 0
+attr interpolationmode none
+attr recordingmode mean
+attr title "lifetime of arrived jobs, mean"
+attr unit s
+scalar Network.sink lifeTime:max 0
+attr interpolationmode none
+attr recordingmode max
+attr title "lifetime of arrived jobs, max"
+attr unit s
+par Network.sink1 typename "\"progetto_sds.queueing_utils.Sink\""
+par Network.sink1 keepJobs false
+scalar Network.sink1 generation:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "the generation of the arrived jobs, mean"
+scalar Network.sink1 generation:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "the generation of the arrived jobs, max"
+scalar Network.sink1 delaysVisited:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total number of delays visited by arrived jobs, mean"
+scalar Network.sink1 delaysVisited:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "the total number of delays visited by arrived jobs, max"
+scalar Network.sink1 queuesVisited:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total number of queues visited by arrived jobs, mean"
+scalar Network.sink1 queuesVisited:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "the total number of queues visited by arrived jobs, max"
+scalar Network.sink1 totalServiceTime:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total time spent  by arrived jobs, mean"
+attr unit s
+scalar Network.sink1 totalServiceTime:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "the total time spent  by arrived jobs, max"
+attr unit s
+scalar Network.sink1 totalDelayTime:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total time spent in delay nodes by arrived jobs, mean"
+attr unit s
+scalar Network.sink1 totalDelayTime:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "the total time spent in delay nodes by arrived jobs, max"
+attr unit s
+scalar Network.sink1 totalQueueingTime:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "the total time spent in queues by arrived jobs, mean"
+attr unit s
+scalar Network.sink1 totalQueueingTime:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "the total time spent in queues by arrived jobs, max"
+attr unit s
+scalar Network.sink1 lifeTime:mean nan
+attr interpolationmode none
+attr recordingmode mean
+attr title "lifetime of arrived jobs, mean"
+attr unit s
+scalar Network.sink1 lifeTime:max nan
+attr interpolationmode none
+attr recordingmode max
+attr title "lifetime of arrived jobs, max"
+attr unit s
+par Network typename "\"progetto_sds.Network\""
+
