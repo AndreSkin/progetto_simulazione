@@ -1,3 +1,7 @@
+[General]
+last-configname=General
+last-runnumber=5
+
 [RunModeProfiles]
 run-playback-speed=100
 run-min-playback-speed=0.01

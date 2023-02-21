@@ -38,7 +38,12 @@ void Server::initialize()
 
 void Server::handleMessage(cMessage *msg)
 {
-    if (msg == endServiceMsg) {
+    //TODO: switch-over time
+    const int first = 0;
+    const int second = 1;
+    int k = 0;
+    if (msg == endServiceMsg)
+    {
         ASSERT(jobServiced != nullptr);
         ASSERT(allocated);
         simtime_t d = simTime() - endServiceMsg->getSendingTime();
@@ -49,23 +54,47 @@ void Server::handleMessage(cMessage *msg)
         emit(busySignal, false);
 
         // examine all input queues, and request a new job from a non empty queue
-        int k = selectionStrategy->select();
+        k = selectionStrategy->select();
         last=k;
-        if (k >= 0) {
+        if (k >= 0)
+        {
             EV << "Requesting job from queue " << k << endl;
             cGate *gate = selectionStrategy->selectableGate(k);
             check_and_cast<IPassiveQueue *>(gate->getOwnerModule())->request(gate->getIndex());
         }
     }
-    else {
+    else
+    {
         if (!allocated)
             error("job arrived, but the sender did not call allocate() previously");
         if (jobServiced)
             throw cRuntimeError("a new job arrived while already servicing one");
 
+        simtime_t serviceTime= 0;
+        //Aggiunto switch per serviceTime differenti
+        switch(last)
+        {
+            case first:
+            {
+                std::cout<<"ServiceTime_1\n";
+                serviceTime = par("serviceTime");
+                break;
+            }
+            case second:
+            {
+                std::cout<<"ServiceTime_2\n";
+                serviceTime = par("serviceTime_2");
+                break;
+            }
+            default:
+            {
+                std::cout<<"Default\n";
+                serviceTime = par("serviceTime");
+            }
+        }
+
         jobServiced = check_and_cast<Job *>(msg);
-        simtime_t serviceTime = par("serviceTime");
-        ///////////////////////////////////////////////////QUI PER DOPPIO SERVICETIME
+        //simtime_t serviceTime = par("serviceTime");
         scheduleAt(simTime()+serviceTime, endServiceMsg);
         emit(busySignal, true);
     }

@@ -186,7 +186,9 @@ ThresholdSelectionStrategy::ThresholdSelectionStrategy(cSimpleModule *module, bo
 }
 
 int ThresholdSelectionStrategy::select()
-{
+{//TODO: code vuote
+
+
     EV << "Threshold strategy started\n";
     const int first_queue = 0;
     const int second_queue = 1;
@@ -196,7 +198,7 @@ int ThresholdSelectionStrategy::select()
     int L2=0;
 
     int inputs = 0;
-    int max_input = 2;
+    const int max_input = 2;
 
     EV<<"LastSelected = "<<lastSelected<<"\n";
 
@@ -208,7 +210,7 @@ int ThresholdSelectionStrategy::select()
             inputs++;
         }
     }
-    EV << "There are " << inputs << " inputs\n";
+    //EV << "There are " << inputs << " inputs\n";
     if (inputs > max_input)
     {
         throw cRuntimeError("Only two input gates are supported by this Strategy");
@@ -231,25 +233,31 @@ int ThresholdSelectionStrategy::select()
     bool over_1 = L1 >= first_thr;
     bool over_2 = L2 >= second_thr;
 
-    //Se tutte e due hanno superato threshold, le alterno
-    if((over_1) && (over_2))
+    if(lastSelected == first_queue) //Sto servendo la prima coda
     {
-        int toSelect = 1 - lastSelected;
-        lastSelected = toSelect;
-        return toSelect;
+        if((over_2) && (!(over_1))) //Se la seconda coda supera threshold e la prima no
+        {
+            lastSelected = second_queue;
+            return second_queue; //Passo alla seconda coda
+        }
+        else
+        {
+            return lastSelected;
+        }
     }
-
-    if (over_1)
+    else if (lastSelected == second_queue)//Se invece sto servendo la seconda coda
     {
-        lastSelected = first_queue;
-        return first_queue;
+        if((over_1) && (!(over_2))) //Se la prima coda supera threshold e la seconda no
+        {
+            lastSelected = first_queue;
+            return first_queue; //Passo alla prima coda
+        }
+        else
+        {
+            return lastSelected;
+        }
     }
-    else if (over_2)
-    {
-        lastSelected = second_queue;
-        return second_queue;
-    }
-    else //Nessuna coda ha raggiunto threshold
+    else
     {
         return lastSelected;
     }
