@@ -41,6 +41,7 @@ void Server::handleMessage(cMessage *msg)
     //TODO: switch-over time
     const int first = 0;
     const int second = 1;
+    const int allempty = -1;
     int k = 0;
     if (msg == endServiceMsg)
     {
@@ -55,12 +56,16 @@ void Server::handleMessage(cMessage *msg)
 
         // examine all input queues, and request a new job from a non empty queue
         k = selectionStrategy->select();
-        last=k;
         if (k >= 0)
         {
+            last=k;
             EV << "Requesting job from queue " << k << endl;
             cGate *gate = selectionStrategy->selectableGate(k);
             check_and_cast<IPassiveQueue *>(gate->getOwnerModule())->request(gate->getIndex());
+        }
+        if(k == allempty)
+        {
+            EV<<"Code vuote, servente aspetta";
         }
     }
     else
@@ -89,7 +94,7 @@ void Server::handleMessage(cMessage *msg)
             default:
             {
                 std::cout<<"Default\n";
-                serviceTime = par("serviceTime");
+                throw cRuntimeError("Coda scelta non presente");
             }
         }
 

@@ -186,17 +186,24 @@ ThresholdSelectionStrategy::ThresholdSelectionStrategy(cSimpleModule *module, bo
 }
 
 int ThresholdSelectionStrategy::select()
-{//TODO: code vuote
-
-
+{
     EV << "Threshold strategy started\n";
+
+    //Le due code e il caso in cui siano vuote
     const int first_queue = 0;
     const int second_queue = 1;
+    const int empty_queues = -1;
+
+    //Threshold delle code
     int first_thr = 0;
     int second_thr = 0;
+
+    //Lunghezza delle code e dell'ultima coda scelta
     int L1 =0;
     int L2=0;
+    int L_last=0;
 
+    //Numero di code collegate al servente (massimo 2)
     int inputs = 0;
     const int max_input = 2;
 
@@ -210,28 +217,102 @@ int ThresholdSelectionStrategy::select()
             inputs++;
         }
     }
-    //EV << "There are " << inputs << " inputs\n";
+
     if (inputs > max_input)
     {
-        throw cRuntimeError("Only two input gates are supported by this Strategy");
+        throw cRuntimeError("Questa strategy supporta solo due input");
     }
 
-
+    //Ottenimento delle threshold delle code
+    //Prima coda
     cModule *Queue_1 = selectableGate(first_queue)->getOwnerModule();
     first_thr = Queue_1->par("Threshold");
     EV <<"Threshold "<<first_queue<<" is "<< first_thr <<"\n";
 
+    //Seconda coda
     cModule *Queue_2 = selectableGate(second_queue)->getOwnerModule();
     second_thr = Queue_2->par("Threshold");
     EV <<"Threshold "<<second_queue<<" is "<< second_thr <<"\n";
 
+    //Ottenimento lunghezza delle due code e dell'ultima selezionata
     L1 = (check_and_cast<IPassiveQueue *>(Queue_1))->length();
     L2 = (check_and_cast<IPassiveQueue *>(Queue_2))->length();
     EV << "L1 = "<<L1<<"\t L2 = "<< L2<<"\n";
 
+    L_last = (lastSelected == first_queue ? L1 : L2); //Lunghezza di lastSelected
+
+
     //Controllo superamento threshold
     bool over_1 = L1 >= first_thr;
     bool over_2 = L2 >= second_thr;
+    //Controllo code vuote
+    bool empty_1 = L1 <= 0;
+    bool empty_2 = L2 <= 0;
+
+    if((empty_1) && (empty_2))//Code vuote
+    {
+        EV<<"Tutte le code sono vuote";
+        were_empty = true; //Per ricordare che le code potrebbero ancora essere vuote
+        return empty_queues; //-1
+    }
+
+    if (were_empty) //Se le code prima erano vuote
+    {
+        if (lastSelected == first_queue) //Se stavo servendo la prima coda
+        {
+            if(!(empty_1) && (empty_2)) //Controllo se Q1 non è vuota e Q2 si
+            {
+                lastSelected = first_queue;
+                were_empty = false;
+                return first_queue; //Riprendo a servire Q1
+            }
+            else if(!(empty_2) && (empty_1)) //Se invece Q2 non è vuota e Q1 si
+            {
+                lastSelected = second_queue;
+                were_empty = false;
+                return second_queue; //Passo a servire Q2
+            }
+        }
+        else if (lastSelected == second_queue) //Se stavo servendo la seconda coda
+        {
+            if(!(empty_2) && (empty_1)) //Controllo se Q2 non è vuota e Q1 si
+            {
+                lastSelected = second_queue;
+                were_empty = false;
+                return second_queue; //Riprendo a servire Q2
+            }
+            else if(!(empty_1) && (empty_2)) //Se invece Q1 non è vuota e Q2 si
+            {
+                lastSelected = first_queue;
+                were_empty = false;
+                return first_queue; //Passo a servire Q1
+            }
+        }
+        //Se sono ancora tutte e due vuote lo controllo sopra e ritorno -1
+        else
+        {
+            throw cRuntimeError("L'esecuzione non dovrebbe mai arrivare qui");
+        }
+    }
+
+    if(L_last == 0) //Se solo l'ultima selezionata è vuota, cambio coda
+    {
+        if((lastSelected == first_queue) && !(empty_2))
+        {
+            lastSelected = second_queue;
+            return second_queue; //Passo alla seconda coda
+        }
+        else if((lastSelected == second_queue) && !(empty_1))
+        {
+            lastSelected = first_queue;
+            return first_queue; //Passo alla prima coda
+        }
+        else
+        {
+            throw cRuntimeError("L'esecuzione non dovrebbe mai arrivare qui");
+        }
+    }
+
 
     if(lastSelected == first_queue) //Sto servendo la prima coda
     {

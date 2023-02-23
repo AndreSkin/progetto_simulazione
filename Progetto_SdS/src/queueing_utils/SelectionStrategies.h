@@ -36,8 +36,9 @@ class QUEUEING_API SelectionStrategy : public cObject
         // returns the i-th module's gate which connects to our host module
         cGate *selectableGate(int i);
 
-        //Added lastSelected
+        //Added lastSelected and were_empty
         int lastSelected = 0;
+        bool were_empty = false;
 
     protected:
         // is this module selectable according to the policy? (queue is selectable if not empty, server is selectable if idle)
