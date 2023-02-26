@@ -207,7 +207,15 @@ int ThresholdSelectionStrategy::select()
     int inputs = 0;
     const int max_input = 2;
 
-    EV<<"LastSelected = "<<lastSelected<<"\n";
+    EV<<"LastSelected = "<<lastSelected;
+    if(switched)
+    {
+        EV<<" (switch over)\n";
+    }
+    else
+    {
+        EV<<"\n";
+    }
 
     //Conto input per verificare siano al massimo max_input
     for (int i = 0; i < gateSize; i++)
@@ -227,17 +235,16 @@ int ThresholdSelectionStrategy::select()
     //Prima coda
     cModule *Queue_1 = selectableGate(first_queue)->getOwnerModule();
     first_thr = Queue_1->par("Threshold");
-    EV <<"Threshold "<<first_queue<<" is "<< first_thr <<"\n";
 
     //Seconda coda
     cModule *Queue_2 = selectableGate(second_queue)->getOwnerModule();
     second_thr = Queue_2->par("Threshold");
-    EV <<"Threshold "<<second_queue<<" is "<< second_thr <<"\n";
+    EV <<"T0 = "<<first_thr<<" T1 = "<< second_thr <<"\n";
 
     //Ottenimento lunghezza delle due code e dell'ultima selezionata
     L1 = (check_and_cast<IPassiveQueue *>(Queue_1))->length();
     L2 = (check_and_cast<IPassiveQueue *>(Queue_2))->length();
-    EV << "L1 = "<<L1<<"\t L2 = "<< L2<<"\n";
+    EV << "L0 = "<<L1<<"\t L1 = "<< L2<<"\n";
 
     L_last = (lastSelected == first_queue ? L1 : L2); //Lunghezza di lastSelected
 
@@ -251,114 +258,129 @@ int ThresholdSelectionStrategy::select()
 
     if((empty_1) && (empty_2))//Code vuote
     {
-        EV<<"Tutte le code sono vuote";
+        EV<<"Tutte le code sono vuote\n";
         were_empty = true; //Per ricordare che le code potrebbero ancora essere vuote
         return empty_queues; //-1
     }
 
-    if(switched)
-      {
-          switched=false;
-          if(((lastSelected==first_queue && !(empty_1))) || ((lastSelected==second_queue && !(empty_2))))
-          {
-              return lastSelected;
-          }
-          else
-          {
-              lastSelected = 1- lastSelected;
-              return 1- lastSelected;
-          }
-      }
-
     if (were_empty) //Se le code prima erano vuote
     {
-        if (lastSelected == first_queue) //Se stavo servendo la prima coda
+        switch(lastSelected)
         {
-            if(!(empty_1) && (empty_2)) //Controllo se Q1 non è vuota e Q2 si
+            case first_queue:
             {
-                lastSelected = first_queue;
-                were_empty = false;
-                return first_queue; //Riprendo a servire Q1
+                if(!(empty_1) && (empty_2)) //Controllo se Q1 non è vuota e Q2 si
+                {
+                    were_empty = false;
+                    return first_queue; //Riprendo a servire Q1
+                }
+                else if(!(empty_2) && (empty_1)) //Se invece Q2 non è vuota e Q1 si
+                {
+                    switched=true;
+                    lastSelected = second_queue;
+                    were_empty = false;
+                    return second_queue; //Passo a servire Q2
+                }
+                break;
             }
-            else if(!(empty_2) && (empty_1)) //Se invece Q2 non è vuota e Q1 si
+            case second_queue:
             {
-                lastSelected = second_queue;
-                were_empty = false;
-                return second_queue; //Passo a servire Q2
+                if(!(empty_2) && (empty_1)) //Controllo se Q2 non è vuota e Q1 si
+               {
+                   were_empty = false;
+                   return second_queue; //Riprendo a servire Q2
+               }
+               else if(!(empty_1) && (empty_2)) //Se invece Q1 non è vuota e Q2 si
+               {
+                   switched=true;
+                   lastSelected = first_queue;
+                   were_empty = false;
+                   return first_queue; //Passo a servire Q1
+               }
+                break;
             }
-        }
-        else if (lastSelected == second_queue) //Se stavo servendo la seconda coda
-        {
-            if(!(empty_2) && (empty_1)) //Controllo se Q2 non è vuota e Q1 si
+            default://Se sono ancora tutte e due vuote lo controllo sopra e ritorno -1
             {
-                lastSelected = second_queue;
-                were_empty = false;
-                return second_queue; //Riprendo a servire Q2
+                throw cRuntimeError("L'esecuzione non dovrebbe mai arrivare qui");
             }
-            else if(!(empty_1) && (empty_2)) //Se invece Q1 non è vuota e Q2 si
-            {
-                lastSelected = first_queue;
-                were_empty = false;
-                return first_queue; //Passo a servire Q1
-            }
-        }
-        //Se sono ancora tutte e due vuote lo controllo sopra e ritorno -1
-        else
-        {
-            throw cRuntimeError("L'esecuzione non dovrebbe mai arrivare qui");
         }
     }
+
+    if(switched) //Se ho appena fatto switch over
+    {
+      if(((lastSelected==first_queue && !(empty_1))) || ((lastSelected==second_queue && !(empty_2))))
+      {
+          switched=false;
+          return lastSelected;
+      }
+      else
+      {
+          switched=true;
+          lastSelected = 1- lastSelected;
+          return 1- lastSelected;
+      }
+  }
 
     if(L_last == 0) //Se solo l'ultima selezionata è vuota, cambio coda
     {
-        if((lastSelected == first_queue) && !(empty_2))
+        switch(lastSelected)
         {
-            lastSelected = second_queue;
-            return second_queue; //Passo alla seconda coda
+            case first_queue:
+            {
+               switched=true;
+               lastSelected = second_queue;
+               return second_queue; //Passo alla seconda coda
+                break;
+            }
+            case second_queue:
+            {
+                switched=true;
+                lastSelected = first_queue;
+                return first_queue; //Passo alla prima coda
+                break;
+            }
+            default: //NB: le code non possono essere entrambe vuote a questo punto
+            {
+                throw cRuntimeError("L'esecuzione non dovrebbe mai arrivare qui");
+            }
         }
-        else if((lastSelected == second_queue) && !(empty_1))
+    }
+
+    switch(lastSelected)
+    {
+        case first_queue:
         {
-            lastSelected = first_queue;
-            return first_queue; //Passo alla prima coda
+            if((over_2) && (!(over_1))) //Se la seconda coda supera threshold e la prima no
+            {
+                switched=true;
+                lastSelected = second_queue;
+                return second_queue; //Passo alla seconda coda
+            }
+            else
+            {
+                return lastSelected;
+            }
+            break;
         }
-        else
+        case second_queue:
+        {
+            if((over_1) && (!(over_2))) //Se la prima coda supera threshold e la seconda no
+            {
+                switched=true;
+                lastSelected = first_queue;
+                return first_queue; //Passo alla prima coda
+                }
+            else
+            {
+                return lastSelected;
+            }
+            break;
+        }
+        default:
         {
             throw cRuntimeError("L'esecuzione non dovrebbe mai arrivare qui");
         }
     }
-
-
-    if(lastSelected == first_queue) //Sto servendo la prima coda
-    {
-        if((over_2) && (!(over_1))) //Se la seconda coda supera threshold e la prima no
-        {
-            lastSelected = second_queue;
-            return second_queue; //Passo alla seconda coda
-        }
-        else
-        {
-            return lastSelected;
-        }
-    }
-    else if (lastSelected == second_queue)//Se invece sto servendo la seconda coda
-    {
-        if((over_1) && (!(over_2))) //Se la prima coda supera threshold e la seconda no
-        {
-            lastSelected = first_queue;
-            return first_queue; //Passo alla prima coda
-        }
-        else
-        {
-            return lastSelected;
-        }
-    }
-    else
-    {
-        return lastSelected;
-    }
-
-    EV << "Ended\n";
-    throw cRuntimeError("Ended");
 }
 
 }; //namespace

@@ -26,6 +26,7 @@ simple Server
              // how the next job will be choosen from the attached queues
         volatile double serviceTime @unit(s); // service time of a job
         volatile double serviceTime_2 @unit(s); // service time of a job for queue 2
+        volatile double switchOverTime @unit(s); //Switch over time
         
         gates:
         input in[];

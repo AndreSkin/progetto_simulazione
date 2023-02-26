@@ -31,6 +31,8 @@ void Server::initialize()
     endServiceMsg = new cMessage("end-service");
     Begin_switchMsg = new cMessage("Begin switch over");
     End_switchMsg = new cMessage("End switch over");
+    switch_over_time=par("switchOverTime");
+
     jobServiced = nullptr;
     allocated = false;
     selectionStrategy = SelectionStrategy::create(par("fetchingAlgorithm"), this, true);
@@ -46,76 +48,95 @@ void Server::handleMessage(cMessage *msg)
     const int allempty = -1;
     int k = 0;
 
-    switch(msg)
+    if(msg==endServiceMsg)
     {
-        case(endServiceMsg):
-        {
-            ASSERT(jobServiced != nullptr);
-            ASSERT(allocated);
-            simtime_t d = simTime() - endServiceMsg->getSendingTime();
-            jobServiced->setTotalServiceTime(jobServiced->getTotalServiceTime() + d);
-            send(jobServiced, "out");
-            jobServiced = nullptr;
-            allocated = false;
-            emit(busySignal, false);
+        EV<<"END SERVICE t= "<<simTime()<<"\n";
 
-            // examine all input queues, and request a new job from a non empty queue
-            k = selectionStrategy->select();
-            if (k >= 0)
+        ASSERT(jobServiced != nullptr);
+        ASSERT(allocated);
+        simtime_t d = simTime() - endServiceMsg->getSendingTime();
+        jobServiced->setTotalServiceTime(jobServiced->getTotalServiceTime() + d);
+        send(jobServiced, "out");
+        jobServiced = nullptr;
+        allocated = false;
+        emit(busySignal, false);
+
+        // examine all input queues, and request a new job from a non empty queue
+        k = selectionStrategy->select();
+        if (k >= 0)
+        {
+            if(k==last)//No switch
             {
-                last=k;
                 EV << "Requesting job from queue " << k << endl;
                 cGate *gate = selectionStrategy->selectableGate(k);
                 check_and_cast<IPassiveQueue *>(gate->getOwnerModule())->request(gate->getIndex());
             }
-            if(k == allempty)
+            else
             {
-                EV<<"Code vuote, servente aspetta";
+                EV<<"SWITCH OVER\n";
+                last= k;
+                scheduleAt(simTime(),Begin_switchMsg);
             }
-            break;
         }
-        case(Begin_switchMsg):
+        else if(k == allempty)
         {
-            break;
+            EV<<"Code vuote, servente aspetta\n";
         }
-        case(End_switchMsg):
-        {
-            break;
-        }
-        default: //JOB
-        {
-            if (!allocated)
-                error("job arrived, but the sender did not call allocate() previously");
-            if (jobServiced)
-                throw cRuntimeError("a new job arrived while already servicing one");
+    }
+    else if(msg==Begin_switchMsg)
+    {
+       EV<<"BEGIN SWITCH t= "<<simTime()<<"\n";
+       delete Begin_switchMsg;
+       allocated=true;
+       scheduleAt(simTime()+switch_over_time, End_switchMsg);
+    }
+    else if(msg==End_switchMsg)
+    {
+        EV<<"END SWITCH t= "<<simTime()<<"\n";
+        allocated=false;
 
-            simtime_t serviceTime= 0;
-            //Aggiunto switch per serviceTime differenti
-            switch(last)
+        k = selectionStrategy->select();
+        EV << "Requesting after switch from: " << k << endl;
+        cGate *gate = selectionStrategy->selectableGate(k);
+        check_and_cast<IPassiveQueue *>(gate->getOwnerModule())->request(gate->getIndex());
+
+        delete End_switchMsg;
+    }
+    else //JOB
+    {
+        EV<<"JOB t= "<<simTime()<<"\n";
+
+        if (!allocated)
+            error("job arrived, but the sender did not call allocate() previously");
+        if (jobServiced)
+            throw cRuntimeError("a new job arrived while already servicing one");
+
+        simtime_t serviceTime= 0;
+        //Aggiunto switch per serviceTime differenti
+        switch(last)
+        {
+            case first:
             {
-                case first:
-                {
-                    std::cout<<"ServiceTime_1\n";
-                    serviceTime = par("serviceTime");
-                    break;
-                }
-                case second:
-                {
-                    std::cout<<"ServiceTime_2\n";
-                    serviceTime = par("serviceTime_2");
-                    break;
-                }
-                default:
-                {
-                    std::cout<<"Default\n";
-                    throw cRuntimeError("Coda scelta non presente");
-                }
+                std::cout<<"ServiceTime_1\n";
+                serviceTime = par("serviceTime");
+                break;
             }
-
-            jobServiced = check_and_cast<Job *>(msg);
-            scheduleAt(simTime()+serviceTime, endServiceMsg);
-            emit(busySignal, true);
+            case second:
+            {
+                std::cout<<"ServiceTime_2\n";
+                serviceTime = par("serviceTime_2");
+                break;
+            }
+            default:
+            {
+                std::cout<<"Default\n";
+                throw cRuntimeError("Coda scelta non presente");
+            }
         }
+
+        jobServiced = check_and_cast<Job *>(msg);
+        scheduleAt(simTime()+serviceTime, endServiceMsg);
+        emit(busySignal, true);
     }
 
 }
