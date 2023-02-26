@@ -256,6 +256,20 @@ int ThresholdSelectionStrategy::select()
         return empty_queues; //-1
     }
 
+    if(switched)
+      {
+          switched=false;
+          if(((lastSelected==first_queue && !(empty_1))) || ((lastSelected==second_queue && !(empty_2))))
+          {
+              return lastSelected;
+          }
+          else
+          {
+              lastSelected = 1- lastSelected;
+              return 1- lastSelected;
+          }
+      }
+
     if (were_empty) //Se le code prima erano vuote
     {
         if (lastSelected == first_queue) //Se stavo servendo la prima coda

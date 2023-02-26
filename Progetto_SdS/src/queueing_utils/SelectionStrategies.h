@@ -39,6 +39,7 @@ class QUEUEING_API SelectionStrategy : public cObject
         //Added lastSelected and were_empty
         int lastSelected = 0;
         bool were_empty = false;
+        bool switched=false;
 
     protected:
         // is this module selectable according to the policy? (queue is selectable if not empty, server is selectable if idle)
