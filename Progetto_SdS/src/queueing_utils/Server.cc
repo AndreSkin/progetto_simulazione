@@ -20,6 +20,8 @@ Server::~Server()
 {
     delete selectionStrategy;
     delete jobServiced;
+    cancelAndDelete(Begin_switchMsg);
+    cancelAndDelete(End_switchMsg);
     cancelAndDelete(endServiceMsg);
 }
 
@@ -29,8 +31,7 @@ void Server::initialize()
     emit(busySignal, false);
 
     endServiceMsg = new cMessage("end-service");
-    Begin_switchMsg = new cMessage("Begin switch over");
-    End_switchMsg = new cMessage("End switch over");
+
     switch_over_time=par("switchOverTime");
 
     jobServiced = nullptr;
@@ -42,7 +43,6 @@ void Server::initialize()
 
 void Server::handleMessage(cMessage *msg)
 {
-    //TODO: switch-over time
     const int first = 0;
     const int second = 1;
     const int allempty = -1;
@@ -50,13 +50,36 @@ void Server::handleMessage(cMessage *msg)
 
     if(msg==endServiceMsg)
     {
+        char const* out = nullptr;
         EV<<"END SERVICE t= "<<simTime()<<"\n";
+
+        //In base alla provenienza mando messaggio in sink differente
+        switch(last)
+       {
+           case first:
+           {
+               //std::cout<<"OUT_1\n";
+               out="out";
+               break;
+           }
+           case second:
+           {
+               //std::cout<<"OUT_2\n";
+               out="out2";
+               break;
+           }
+           default:
+           {
+               //std::cout<<"Default\n";
+               throw cRuntimeError("L'esecuzione non dovrebbe mai arrivare qui");
+           }
+       }
 
         ASSERT(jobServiced != nullptr);
         ASSERT(allocated);
         simtime_t d = simTime() - endServiceMsg->getSendingTime();
         jobServiced->setTotalServiceTime(jobServiced->getTotalServiceTime() + d);
-        send(jobServiced, "out");
+        send(jobServiced, out);
         jobServiced = nullptr;
         allocated = false;
         emit(busySignal, false);
@@ -75,7 +98,8 @@ void Server::handleMessage(cMessage *msg)
             {
                 EV<<"SWITCH OVER\n";
                 last= k;
-                scheduleAt(simTime(),Begin_switchMsg);
+                simtime_t sendtime = endServiceMsg->isScheduled()?endServiceMsg->getArrivalTime():simTime();
+                scheduleAt(sendtime, Begin_switchMsg);
             }
         }
         else if(k == allempty)
@@ -86,7 +110,6 @@ void Server::handleMessage(cMessage *msg)
     else if(msg==Begin_switchMsg)
     {
        EV<<"BEGIN SWITCH t= "<<simTime()<<"\n";
-       delete Begin_switchMsg;
        allocated=true;
        scheduleAt(simTime()+switch_over_time, End_switchMsg);
     }
@@ -99,8 +122,6 @@ void Server::handleMessage(cMessage *msg)
         EV << "Requesting after switch from: " << k << endl;
         cGate *gate = selectionStrategy->selectableGate(k);
         check_and_cast<IPassiveQueue *>(gate->getOwnerModule())->request(gate->getIndex());
-
-        delete End_switchMsg;
     }
     else //JOB
     {
@@ -117,19 +138,19 @@ void Server::handleMessage(cMessage *msg)
         {
             case first:
             {
-                std::cout<<"ServiceTime_1\n";
+                //std::cout<<"ServiceTime_1\n";
                 serviceTime = par("serviceTime");
                 break;
             }
             case second:
             {
-                std::cout<<"ServiceTime_2\n";
+                //std::cout<<"ServiceTime_2\n";
                 serviceTime = par("serviceTime_2");
                 break;
             }
             default:
             {
-                std::cout<<"Default\n";
+                //std::cout<<"Default\n";
                 throw cRuntimeError("Coda scelta non presente");
             }
         }

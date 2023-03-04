@@ -33,8 +33,8 @@ class QUEUEING_API Server : public cSimpleModule, public IServer
 
         Job *jobServiced = nullptr;
         cMessage *endServiceMsg = nullptr;
-        cMessage *Begin_switchMsg = nullptr;
-        cMessage *End_switchMsg = nullptr;
+        cMessage *Begin_switchMsg = new cMessage("Begin switch over");
+        cMessage *End_switchMsg = new cMessage("End switch over");
 
     public:
         virtual ~Server();

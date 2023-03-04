@@ -308,14 +308,16 @@ int ThresholdSelectionStrategy::select()
 
     if(switched) //Se ho appena fatto switch over
     {
-      if(((lastSelected==first_queue && !(empty_1))) || ((lastSelected==second_queue && !(empty_2))))
+        switched=false;
+      //Se la nuova coda non è vuota e non ha superato threshold
+      if(((lastSelected==first_queue && !(empty_1) && !(over_2))) || ((lastSelected==second_queue && !(empty_2) && !(over_1))))
       {
-          switched=false;
+          //Confermo la scelta
           return lastSelected;
       }
       else
       {
-          switched=true;
+          //Altrimenti ritorno alla coda precedente
           lastSelected = 1- lastSelected;
           return 1- lastSelected;
       }
