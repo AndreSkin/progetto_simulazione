@@ -36,7 +36,7 @@ class QUEUEING_API SelectionStrategy : public cObject
         // returns the i-th module's gate which connects to our host module
         cGate *selectableGate(int i);
 
-        //Added lastSelected and were_empty
+        //Added lastSelected, switched and were_empty
         int lastSelected = 0;
         bool were_empty = false;
         bool switched=false;

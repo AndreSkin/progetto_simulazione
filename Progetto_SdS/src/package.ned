@@ -12,28 +12,28 @@ import progetto_sds.queueing_utils.Source;
 //
 network Network
 {
-    @display("bgb=689,238");
+    @display("bgb=673,359");
     submodules:
         S1: Source {
-            @display("p=53,52");
+            @display("p=53,66;is=vl");
         }
         S2: Source {
-            @display("p=53,189");
+            @display("p=53,259;is=vl");
         }
         first: PassiveQueue {
-            @display("p=187,52");
+            @display("p=219,66;is=vl");
         }
         second: PassiveQueue {
-            @display("p=187,189");
+            @display("p=219,259;is=vl");
         }
         servente: Server {
-            @display("p=315,134");
+            @display("p=378,172;is=vl");
         }
         sink: Sink {
-            @display("p=449,52");
+            @display("p=565,66;is=vl");
         }
         sink1: Sink {
-            @display("p=449,189");
+            @display("p=565,278;is=vl");
         }
     connections:
         S1.out --> first.in++;
