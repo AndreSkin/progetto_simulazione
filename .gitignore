@@ -6,3 +6,6 @@
 /simu_block/results/
 *.lnk
 /Progetto_SdS/src/results/
+*.sca
+*.vec
+*.vci
