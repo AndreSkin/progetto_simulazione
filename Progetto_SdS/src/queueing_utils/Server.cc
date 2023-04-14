@@ -139,19 +139,16 @@ void Server::handleMessage(cMessage *msg)
         {
             case first:
             {
-                //std::cout<<"ServiceTime_1\n";
                 serviceTime = par("serviceTime");
                 break;
             }
             case second:
             {
-                //std::cout<<"ServiceTime_2\n";
                 serviceTime = par("serviceTime_2");
                 break;
             }
             default:
             {
-                //std::cout<<"Default\n";
                 throw cRuntimeError("Coda scelta non presente");
             }
         }
