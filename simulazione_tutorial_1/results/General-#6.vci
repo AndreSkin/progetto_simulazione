@@ -1,5 +1,5 @@
-file 35359 1667465097                                           
-version 3
+file 35359 1667468697                                           
+version 2
 run General-6-20221103-09:44:57-15908
 attr configname General
 attr datetime 20221103-09:44:57
@@ -29,11 +29,10 @@ vector 0 Rete.Servente queueLength:vector ETV
 attr interpolationmode sample-hold
 attr recordingmode vector
 attr title "queue length"
+0	935 14032 0 2069 0 984.174422099964 535 0 8 813 2387
 vector 1 Rete.Pozzo lifeTime:vector ETV
 attr interpolationmode none
 attr recordingmode vector
 attr title "lifetime of arrived jobs"
 attr unit s
-0	935 14032 0 2069 0 984.174422099964 535 0 8 813 2387
-1	14967 20390 4 2084 4.870677388655 992.417910699413 521 0.002627202864 9.95614590419 1113.0101807186 4731.9948487452
-
+1	14967 20392 4 2084 4.870677388655 992.417910699413 521 0.002627202864 9.95614590419 1113.0101807186 4731.9948487452
